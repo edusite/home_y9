@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="icon/image" href="../img/icon.png">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+	<title>Different mental health condition </title>
+</head>
+<body class="bg-light">
+
+    <!-- to top button -->
+    <button class="to-top-btn" type="button" onclick="totopBtn()" id="totopBtn" title="go to top">
+        <!-- icon up div -->
+        <div class="iconup-div px-auto">
+            <span class="px-auto mx-auto">
+                <i class="fa-solid fa-angle-up fs-6 mt-1 px-auto mx-auto"></i>
+            </span>
+        </div>
+        <!-- end icon up div -->
+        <!-- effect text div -->
+        <div class="effect-div-totopbtn">
+            <span class="d-block pt-1">
+                <i class="fa-solid fa-angle-up"></i>
+                <p class="pb-1">To top</p>
+            </span>
+        </div>
+        <!-- end effect text div -->
+    </button>
+    <!-- end to top button -->
+    <!-- header -->
+    <header id="header" class="h-auto">
+        <div class="w-100 header-bgimg">
+
+            <!-- navigation div -->
+            <div id="nav-container" class="fixed-top hovereffect-nav d-none d-xl-block d-xxl-block">
+                <!-- navigation -->
+                <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+                    <!-- nav-item container -->
+                    <div class="container-fluid h-auto">
+                        <!-- nav icon -->
+                        <a class="navbar-brand ms-2" href="../index.html">
+                            <img src="../img/icon.png" alt="HOME icon" class="nav-icon" />
+                        </a>
+                        <!-- end nav icon -->
+                        <!-- toggler button for responsive -->
+                        <!-- <input type="checkbox" id="active-nav-effect" class=" d-block d-xl-none d-xxl-none">
+                        <label for="active" class="responsivenav-menubtn d-block d-xl-none d-xxl-none">
+                            <i class="fas fa-bars responsivenav-menubtn-i"></i>
+                        </label> -->
+                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                        </button> -->
+                        <!-- end toggler button for responsive -->
+                        
+                        <!-- navbar-item container -->
+                        <div class="collapse navbar-collapse d-xl-block d-xxl-block d-none" id="navContent">
+                            <ul class="navbar-nav mx-auto my-lg-0">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="blog-collection.html#blog">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown mx-2">
+                                    <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="service-tests.html#test" title="Get to know your current mental health condition">Tests</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="service-relax.html">Relax for two minutes</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="service-daily-affirmation.html">Daily affirmation</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="chat.html" title="Open up everything freely">Chat</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link"  href="about.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="../index.html#contact-section">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- signin/up div -->
+                            <div class="signinup-div h-auto d-flex">
+                                <!-- signin-btn -->
+                                <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                    <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                                </a>
+                                <!-- end signin-btn -->
+                                <!-- signup-btn -->
+                                <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                    <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                                </a>
+                                <!-- end signup-btn -->
+                            </div>
+                            <!-- end signin/up div -->
+                        </div>
+                        <!-- end navbar-item container -->
+                    </div>
+                    <!-- end nav-item container -->
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <!-- end navigation div -->
+
+            
+            <!-- responsive navigation div -->
+            <div id="nav-container" class="fixed-top d-block d-xl-none d-xxl-none">
+                <!-- navigation -->
+                <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+                    <!-- nav-item container -->
+                    <div class="container-fluid h-auto">
+                        <!-- nav icon -->
+                        <a class="navbar-brand ms-2 responsive-homeicon" href="../index.html">
+                            <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-25" />
+                        </a>
+                        <!-- end nav icon -->
+                        <!-- toggler button for responsive -->
+                        <input type="checkbox" id="active-nav-effect" class="d-none">
+                        <label for="active-nav-effect" class="responsivenav-menubtn d-block d-xl-none d-xxl-none rounded-circle">
+                            <span></span>
+                        </label>
+                         <label for="active-nav-effect" class="close"></label>
+                        <!-- end toggler button for responsive -->
+                        
+                        <!-- navbar-item container -->
+                        <div class="responsive-nav wrapper" id="navContent">
+                            <!-- nav icon -->
+                            <a class="navbar-brand ms-lg-2 m-0" href="../index.html">
+                                <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-50 w-lg-auto w-xl-auto w-xxl-auto pt-5" />
+                            </a>
+                            <!-- end nav icon -->
+                            <ul class="mx-auto my-lg-0 responsive-ul">
+                                    
+                                <li class="nav-item mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="blog-collection.html#blog">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown mx-auto my-4 w-auto">
+                                    <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-tests.html#test" title="Get to know your current mental health condition">Tests</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-relax.html">Relax for two minutes</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-daily-affirmation.html">Daily affirmation</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="chat.html" title="Open up everything freely">Chat</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item  mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="about.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="../index.html#contact-section">
+                                        Contact us
+                                    </a>
+                                </li>
+                                <!-- signin/up div -->
+                                <div class="signinup-div w-100 h-auto d-flex">
+                                    <!-- signin-btn -->
+                                    <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                        <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                                    </a>
+                                    <!-- end signin-btn -->
+                                    <!-- signup-btn -->
+                                    <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                        <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                                    </a>
+                                    <!-- end signup-btn -->
+                                </div>
+                                <!-- end signin/up div -->
+                            </ul>
+                        </div>
+                        <!-- end navbar-item container -->
+                    </div>
+                    <!-- end nav-item container -->
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <!-- end responsive navigation div -->
+            <!-- header-bg div -->
+            <!-- <video autoplay muted loop id="headerVideo" class="d-block h-100 w-100">
+                <source src="../media/h-bgvd.mp4" type="video/mp4">
+            </video> -->
+        </div>
+        <!-- quote div -->
+        <!-- <div class="py-5 col-12 header-quote-div">
+            <h1 class="text-center header-quote py-4">"It's OK to not be OK."</h1>
+        </div> -->
+        <!-- end quote div -->
+        <!-- end header-bg div -->
+		<!-- mental health condition header -->
+        <div class="px-auto bigdiv_mental">
+            <div class="bigtext_blogtext text-center text-white col-11 mx-auto" onmouseenter="waveHover()" onmouseleave="waveHoverout()">
+                <span>M</span><span>a</span><span>k</span><span>e</span>
+                <span>  </span>
+                <span>y</span><span>o</span><span>u</span><span>r</span>
+                <span>  </span>
+                <span>m</span><span>e</span><span>n</span><span>t</span><span>a</span><span>l</span>
+                <span> </span>
+                <span>h</span><span>e</span><span>a</span><span>l</span><span>t</span><span>h</span>
+                <span> </span>
+                <span>p</span><span>r</span><span>i</span><span>o</span><span>r</span><span>i</span><span>t</span><span>y</span>
+            </div>
+        </div>
+        <!-- end mental health header -->
+  
+    </header>
+    <!-- end header -->
+
+	<!-- section  -->
+	<section id="mental-health" class="bg-light mx-auto">
+
+
+    <!-- find mental_health blogs -->
+	    <div class="mental-health-type container py-5">
+	    	<!-- Types of mental health condition -->
+			<div class="mt-3">
+				<h3 class="ms-5">Mental health condition</h3>
+				
+				<br/> <h4>Facts</h4>
+				<p class="ms-4">A mental illness is a disease of the brain that causes mild to severe disturbances in thought and/or behavior, resulting in an inability to cope with life’s ordinary demands and routines.  There are more than 200 classified forms of mental illness. Some of the more common disorders are:  clinical depression, bipolar disorder, dementia, schizophrenia and anxiety disorders.  Symptoms may include changes in mood, personality, personal habits and/or social withdrawal.</p>
+				<ul>
+					<li> 1 in every 8 people in the world live with a mental disorder.</li>			
+					<li>Mental disorders involve significant disturbances in thinking, emotional regulation, or behaviour.</li>
+					<li>There are many different types of mental disorders.</li>
+					<li>Effective prevention and treatment options exist.</li>
+					<li>Most people do not have access to effective care</li>
+				</ul>
+				
+			</div>
+
+		<hr/>
+			<!-- Start tips div -->
+			<div class="mental-health-tip container-fluid mt-5">
+				<div class="row mental_health-intro">
+					<!-- tips with text -->
+					<div class="col-6 ">
+						<h2 class="text-center"> Types of mental health conditions</h2>
+
+						<p class="mt-3">While there are over 200 classified forms of mental illness, the five (5) major categories of mental illness are:
+							<br/>
+
+							<br/>• Anxiety Disorders.
+							<br/>• Depression
+
+
+							<br/>• Schizophrenia/Psychotic Disorders.
+							<br/>• Bipolar Disorder
+
+							<br/>• Post-Traumatic Stress Disorder (PTSD)
+							<br/>• Eating Disorders.
+
+							<br/>• Disruptive behaviors and dissocial disorders		
+							<br/>• Neurodevelopmental disorders
+
+							<br/>• Mood Disorders.														
+							<br/>• Loneliness.											
+						</p>
+						
+						
+					</div>
+					<!-- end tips with text -->
+
+					<div class="col-6">
+						<img src="../img/mental-health-type.jpg " class="w-100" alt="image for the tips to find mental_health">
+					
+					</div>
+						
+				</div>
+				<!-- end tips div -->
+				
+			</div>
+			<!-- end tips -->
+			<!-- quotes -->
+			<div class="mental_health_quote shadow-lg p-5 mb-5 bg-body rounded-3 w-75 h-25 mx-auto text-center mt-5" id="">
+            “It's okay not to be okay, as long as you're not giving up.”
+        	</div>
+        	<!-- end quotes -->
+
+			<!-- first section -->
+			<div class="container-fluid mental-health-blog mx-auto mt-5">
+				<div class="row">
+
+					<div class="col-lg-5 col-md-12 card mx-auto mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5 mt-xs-5">
+						<img src="../img/anxiety.jpg" alt="Image relate with Anxiety Disorders">
+						<div class="card-body">
+							<h5>Anxiety Disorders</h5>
+							<p class="card-text">Anxiety disorders are characterised by excessive fear and worry and related behavioural disturbances.  An anxiety disorder may exist if the anxiety experienced is disproportionate to the circumstance, is difficult for the individual to control, or interferes with normal functioning.  There are several different kinds of anxiety disorders, such as:   and others. 
+
+							    
+							<br/>• generalised anxiety disorder (characterised by excessive worry),
+							<br/>• panic disorder (characterised by panic attacks),
+							<br/>• social anxiety disorder (characterised by excessive fear and worry in social situations), 
+
+							<br/>• separation anxiety disorder (characterised by excessive fear or anxiety about separation from those individuals to whom the person has a deep emotional bond),<br/>
+							 Effective psychological treatment exists, and depending on the age and severity, medication may also be considered.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-12 mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5  mt-xs-5 card mx-auto">
+						<img src="../img/depression.jpeg" alt="Image relate with depression">
+						
+						<div class="card-body">
+							<h5>Depression</h5>
+							<p class="card-text">
+								 
+								In 2019, 280 million people were living with depression, including 23 million children and adolescents . Depression is different from usual mood fluctuations and short-lived emotional responses to challenges in everyday life.  During a depressive episode, the person experiences depressed mood (feeling sad, irritable, empty) or a loss of pleasure or interest in activities, for most of the day, nearly every day, for at least two weeks. Several other symptoms are also present, which may include poor concentration, feelings of excessive guilt or low self-worth, hopelessness about the future, thoughts about dying or suicide, disrupted sleep, changes in appetite or weight, and feeling especially tired or low in energy. People with depression are at an increased risk of suicide. Yet, effective psychological treatment exists, and depending on the age and severity, medication may also be considered. 
+							
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--end first section -->
+
+			<!-- second section -->
+			<div class="container-fluid mental-health-blog mx-auto mt-5">
+				<div class="row">
+
+					<div class="col-lg-5 col-md-12 card mx-auto mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5 mt-xs-5">
+						<img src="../img/depression2.jpg" alt="Image relate with Schizophrenia/Psychotic Disorders.">
+						<div class="card-body">
+							<h5>Schizophrenia/Psychotic Disorders.</h5>
+							<p class="card-text">Schizophrenia affects approximately 24 million people or 1 in 300 people worldwide. People with schizophrenia have a life expectancy 10-20 years below that of the general population .   Schizophrenia is characterised by significant impairments in perception and changes in behaviour.  Symptoms may include persistent delusions, hallucinations, disorganised thinking, highly disorganised behaviour, or extreme agitation.  People with schizophrenia may experience persistent difficulties with their cognitive functioning.   Yet, a range of effective treatment options exist, including medication, psychoeducation, family interventions, and psychosocial rehabilitation.  </p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-12 mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5  mt-xs-5 card mx-auto">
+						<img src="../img/disorder1.jpg" alt="Image relate with Bipolar Disorder">
+						<div class="card-body">
+							<h5>Bipolar Disorder</h5>
+							<p class="card-text">In 2019, 40 million people experienced bipolar disorder (1).  People with bipolar disorder experience alternating depressive episodes with periods of manic symptoms.  During a depressive episode, the person experiences depressed mood (feeling sad, irritable, empty) or a loss of pleasure or interest in activities, for most of the day, nearly every day.  Manic symptoms may include euphoria or irritability, increased activity or energy, and other symptoms such as increased talkativeness, racing thoughts, increased self-esteem, decreased need for sleep, distractibility, and impulsive reckless behaviour.  People with bipolar disorder are at an increased risk of suicide. Yet effective treatment options exist including psychoeducation, reduction of stress and strengthening of social functioning, and medication.
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--end second section -->
+
+			<!-- third section -->
+			<div class="container-fluid mental-health-blog mx-auto mt-5">
+				<div class="row">
+
+					<div class="col-lg-5 col-md-12 card mx-auto mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5 mt-xs-5">
+						<img src="../img/ptsd.jpeg" alt="Image relate with Post-Traumatic Stress Disorder (PTSD)">
+						<div class="card-body">
+							<h5>Post-Traumatic Stress Disorder (PTSD)</h5>
+							<p class="card-text">The prevalence of PTSD and other mental disorders is high in conflict-affected settings (3). PTSD may develop following exposure to an extremely threatening or horrific event or series of events. It is characterised by all of the following: 1) re-experiencing the traumatic event or events in the present (intrusive memories, flashbacks, or nightmares); 2) avoidance of thoughts and memories of the event(s), or avoidance of activities, situations, or people reminiscent of the event(s); and 3) persistent perceptions of heightened current threat. These symptoms persist for at least several weeks and cause significant impairment in functioning. Effective psychological treatment exists. </p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-12 mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5  mt-xs-5 card mx-auto">
+						<img src="../img/eat-disorder.jpeg" alt="Image relate with eating disorders">
+						<div class="card-body">
+							<h5>Eating Disorders</h5>
+							<p class="card-text">In 2019, 14 million people experienced eating disorders including almost 3 million children and adolescents . Eating disorders, such as anorexia nervosa and bulimia nervosa, involve abnormal eating and preoccupation with food as well as prominent body weight and shape concerns. The symptoms or behaviours result in significant risk or damage to health, significant distress, or significant impairment of functioning. Anorexia nervosa often has its onset during adolescence or early adulthood and is associated with premature death due to medical complications or suicide.  Individuals with bulimia nervosa are at a significantly increased risk for substance use, suicidality, and health complications. Effective treatment options exist, including family-based treatment and cognitive-based therapy.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--end third section -->
+
+			<!-- fourth section -->
+			<div class="container-fluid mental-health-blog mx-auto mt-5">
+				<div class="row">
+
+					<div class="col-lg-5 col-md-12 card mx-auto mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5 mt-xs-5">
+						<img src="../img/kid-yell.jpg" alt="Image relate with Disruptive behaviors and dissocial disorders">
+						<div class="card-body">
+							<h5>Disruptive behaviors and dissocial disorders</h5>
+							<p class="card-text">40 million people, including children and adolescents, were living with conduct-dissocial disorder in 2019 (1). This disorder, also known as conduct disorder, is one of two disruptive behaviour and dissocial disorders, the other is oppositional defiant disorder.  Disruptive behaviour and dissocial disorders are characterised by persistent behaviour problems such as persistently defiant or disobedient to behaviours that persistently violate the basic rights of others or major age-appropriate societal norms, rules, or laws. Onset of disruptive and dissocial disorders, is commonly, though not always, during childhood. Effective psychological treatments exist, often involving parents, caregivers, and teachers, cognitive problem-solving or social skills training.
+							</p>
+
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-12 mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5  mt-xs-5 card mx-auto">
+						<img src="../img/adhd.jpg" alt="Image relate with Neurodevelopmental disorders">
+						<div class="card-body">
+							<h5>Neurodevelopmental disorders </h5>
+							<p class="card-text">Neurodevelopmental disorders are behavioural and cognitive disorders, that arise during the developmental period, and involve significant difficulties in the acquisition and execution of specific intellectual, motor, language, or social functions.<br/>
+
+							Neurodevelopmental disorders include disorders of intellectual development, autism spectrum disorder, and attention deficit hyperactivity disorder (ADHD) amongst others. 
+<br/>
+							Effective treatment options exist including psychosocial interventions, behavioural interventions, occupational and speech therapy. For certain diagnoses and age groups, medication may also be considered.
+							
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--end fourth section -->
+
+			<!-- Mood disorders section -->			
+
+			<div class="mood-div mx-auto mt-5 d-flex container-fluid">
+				<div class="row">
+					<!-- img -->
+					<div class="col-xl-6 col-md-12 ">
+						<img src="../img/mood.jpg" alt="Image of mood disorders">
+					</div>
+					
+					<div class="mood-text col-xl-6 col-md-12 mt-md-3 mt-sm-3  mt-lg-1">
+						<h5 class="text-center">Mood Disorders</h5>
+						<p class="mt-4">Most of us have an immediate and intuitive understanding of the notion of mood.  We readily know what it means to be happy or sad.  Mood disorders, however, are outside the bounds of normal fluctuations from sadness to elation.  Mood disorders affect about 7% of Americans and rank among the top 10 causes of disability.  In the workplace, major/clinical depression is a leading cause of absenteeism and diminished productivity.  Depression-related visits to physicians account for a large portion of health care expenditures.
+
+							Mood disorders include:    
+								<br/> • clinical or major depression, 
+								<br/> • dysthymia and bipolar disorder, formerly known as “manic-depression”.<br/>
+								Suicide is the most dreaded complication of major depressive disorders.  About 10 to 15% of patients formerly hospitalized with depression commit suicide.  
+						</p>
+					</div>
+				</div>
+						
+			</div>
+			<!-- end mood disorders section -->
+
+			<!-- loneliness section -->			
+
+			<div class="loneliness-div mx-auto mt-5 d-flex container-fluid">
+				<div class="row">
+					<div class="loneliness-text col-xl-6 col-md-12 mt-md-3 mt-sm-3  mt-lg-1">
+						<h5 class="text-center">Loneliness</h5>
+						<p class="mt-4">Loneliness occurs when your needs to socialize do not get met. This can happen for short periods of time, such as when your friends go away for the holidays or when you go home from college, leaving all your friends.
+							<br/>Chronic loneliness is different. It occurs when you continually do not have the social interaction you need over the course of several weeks, months, or years.
+
+							<br/>Neither loneliness nor chronic loneliness is a classified mental health condition, but chronic loneliness can lead to mental health problems, such as depression, or other effects, such as alcohol use disorder.<br/>In addition to therapy, you may find taking some steps on your own to meet and connect with others helpful. Some potential ways to make connections with others include:
+								<br/>
+							
+								 • try reaching out to distant family members either through social media, a phone call, or video chatting
+
+
+								<br/>
+								 • contact a friend or friendly acquaintance to see if they’d like to go for coffee, see a movie, or have lunch or dinner<br/>
+								 • find a local group that participates in an activity or sport you enjoy, like basketball, painting, pottery, theater, or other activities 
+								
+						</p>
+					</div>
+
+					<!-- img -->
+					<div class="col-xl-6 col-md-12 ">
+						<img src="../img/loneliness.jpg" class="col-6 ms-3" alt="Image of loneliness">
+					</div>
+					
+				</div>				
+				
+			</div>
+			<!-- end loneliness section -->			
+			
+			<!--end last section -->
+			<div class="health_support_quote shadow-lg p-5 mb-5 bg-body rounded-3 w-80 h-25 mx-auto text-center mt-5" id="">
+            “People with mental disorders also require social support, including support in developing and maintaining personal, family, and social relationships.  People with mental disorders may also need support for educational programmes, employment, housing, and participation in other meaningful activities. ”
+        	</div>
+
+			
+	    </div>	
+    <!-- end find mental_health blogs -->    
+	</section>	
+	<!-- end section  -->
+
+	
+
+
+
+    <!-- footer -->
+    <footer id="footer" class="pt-1 h-auto">
+        <!-- first footer part -->
+        <div class="col-11 mx-auto my-1 d-lg-flex d-xl-flex d-xxl-flex d-block py-4">
+            <!-- features div -->
+            <div class="col-lg-2 col-xl-2 col-xxl-3 col-11 mx-auto ms-lg-5 ms-xl-5 ms-xxl-5">
+                <!-- heading -->
+                <div class="d-flex border-bottom border-dark pb-3 mt-2 h feature-heading text-center text-xxl-start text-xl-start justify-content-center justify-content-lg-start justify-content-xl-start justify-content-xxl-start">
+                    <h4 class="mt-2">Features</h4>
+                    <div class="feature-icon ms-2 pt-2">
+                        <svg version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" class="svg-feature">
+                            <g>
+                                <path d="m930 552.86h-660c-6.9297 0-13.191-4.168-15.836-10.582-2.6602-6.4102-1.1875-13.777 3.7148-18.684l289.72-289.7c4.1367-4.1367 10.078-5.875 15.836-4.6211 5.707 1.2734 10.379 5.375 12.387 10.883 3.7031 10.164 13.43 16.996 24.176 16.996s20.473-6.832 24.191-17.008c2.0078-5.5078 6.6797-9.5938 12.406-10.863 5.6602-1.2539 11.668 0.48437 15.82 4.6211l289.7 289.7c4.9062 4.9062 6.3789 12.27 3.7148 18.684-2.6445 6.4062-8.9062 10.574-15.836 10.574zm-618.62-34.285h577.23l-245.5-245.51c-11.102 11.469-26.586 18.367-43.109 18.367-16.539 0-32.008-6.8984-43.109-18.348z"></path>
+                                <path d="m986.48 1028.6h-772.97c-23.203 0-42.086-18.883-42.086-42.086v-425.82c0-23.203 18.883-42.09 42.086-42.09h772.97c23.203 0 42.086 18.887 42.086 42.09v425.82c0 23.203-18.883 42.086-42.086 42.086zm-772.97-475.71c-4.3008 0-7.8008 3.5-7.8008 7.8047v425.82c0 4.3008 3.5 7.8008 7.8008 7.8008h772.97c4.3008 0 7.8008-3.5 7.8008-7.8008v-425.82c0-4.3047-3.5-7.8047-7.8008-7.8047z"></path>
+                                <path d="m599.92 935.74c-89.332 0-162-72.758-162-162.17 0-89.414 72.672-162.17 162-162.17 89.414 0 162.17 72.758 162.17 162.17-0.003906 89.414-72.758 162.17-162.17 162.17zm0-290.05c-70.43 0-127.72 57.371-127.72 127.89 0 70.512 57.289 127.89 127.72 127.89 70.512 0 127.89-57.371 127.89-127.89-0.003907-70.516-57.375-127.89-127.89-127.89z"></path>
+                                <path d="m576.71 838.07c-4.5547 0-8.9062-1.8086-12.121-5.0234l-48.113-48.129c-6.6953-6.6953-6.6953-17.543 0-24.242 6.6953-6.6953 17.543-6.6953 24.242 0l35.992 36.012 82.582-82.582c6.6953-6.6953 17.543-6.6953 24.242 0 6.6953 6.6953 6.6953 17.543 0 24.242l-94.703 94.703c-3.2148 3.2109-7.5703 5.0195-12.121 5.0195z"></path>
+                                <path d="m600 291.43c-25.113 0-47.777-15.887-56.383-39.559-2.3633-6.1445-3.6172-13.125-3.6172-20.441 0-33.082 26.918-60 60-60s60 26.918 60 60c0 7.3477-1.2383 14.312-3.6992 20.727-8.5391 23.387-31.207 39.273-56.301 39.273zm0-85.715c-14.18 0-25.715 11.535-25.715 25.715 0 3.0625 0.50391 5.9766 1.4414 8.4375 3.8008 10.445 13.527 17.277 24.273 17.277s20.473-6.832 24.191-17.008c1.0391-2.6992 1.5234-5.6094 1.5234-8.707 0-14.18-11.535-25.715-25.715-25.715z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <!-- end heading -->
+                <!-- links list ul -->
+                <ul class="mt-4">
+                    <li class="footer-feature-li my-2">
+                        <a href="blog-collection.html#blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../index.html#service">
+                            Service
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="about.html#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../media/citation.docx">
+                            Citation
+                        </a>
+                    </li>
+                </ul>
+                <!-- end links list ul -->
+            </div>
+            <!-- end features div -->
+            <!-- icon div -->
+            <!-- <div class="col-lg-4 col-xl-4 col-xxl-4 mx-auto ps-1">
+                <a href="index.html">
+                    <img src="img/icon.png" alt="HOME icon" class="p-5" />
+                </a>
+            </div> -->
+            <!-- icon div -->
+            <!-- contact us div -->
+            <div id="contact-section" class="col-lg-6 col-xl-6 col-xxl-6 col-11 mx-auto my-1 mt-lg-0 mt-xl-0 mt-xxl-0 mt-5">
+                <!-- heading contact us -->
+                <h4 class="border-bottom border-dark pb-3 mb-4">Contact us</h4>
+                <!-- end heading contact us -->
+                <!-- contact us form -->
+                <form action="" method="post " class="mt-2">
+                    <!-- name -->
+                    <div class="mb-3 d-xl-flex">
+                        <input type="text" class="form-control" id="contactInputName" placeholder="Name">
+                    </div>
+                    <!-- end name -->
+                    <!-- email -->
+                    <div class="mb-3 d-lg-flex d-xl-flex d-xxl-flex">
+                        <input type="email" class="form-control" id="contactInputEmail" aria-describedby="emailHelp" placeholder="Email address">
+                    </div>
+                    <!-- end email -->
+                    <!-- PhoneNumber -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="contactInputPhoneNumber" placeholder="Phone number">
+                    </div>
+                    <!-- end PhoneNumber -->
+                    <!-- message -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control py-4" id="contactInputmessage" placeholder="Message">
+                    </div>
+                    <!-- end message -->
+                    <!-- send btn -->
+                    <button type="submit" class="btn btn-primary d-flex sendmsg-div sendbtn-footer px-2 py-2">
+                        <div class="send-svg-div">
+                            <div class="ssend-svg-div">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="me-2">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                              </div>
+                        </div>
+                        <span class="send-span pe-1">
+                            Send
+                        </span>
+                    </button>
+                    <!-- end send btn -->
+                <!-- end contact us form -->
+            </div>
+            <!-- contact us div -->
+        </div>
+        <!-- end first footer part -->
+
+        <!-- second footer part-->
+        <div class="d-flex s-footer pb-1">
+            <!-- copy right -->
+            <span class="fst-italic ms-4 mt-3 col-7">
+                @2023 HOME
+            </span>
+            <!-- end copy right -->
+            <!-- social media ul -->
+            <ul class="d-flex mx-auto icon-ul-footer">
+                <!-- facebook -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end facebook -->
+                <!-- instagram -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end instagram -->
+                <!-- twitter -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end twitter -->
+                <!-- youtube -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-youtube fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end youtube -->
+            </ul>
+            <!-- end social media ul -->
+        </div> 
+        <!-- end second footer part-->  
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- link with javascript -->
+    <script src="../javascript/js.js"></script>
+    <!-- end link with javascript -->
+
+	
+</body>
+</html>

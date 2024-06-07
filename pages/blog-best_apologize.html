@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="icon/image" href="../img/icon.png">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+	<title>Best ways to apologize</title>
+</head>
+<body class="bg-light">
+    <!-- to top button -->
+    <button class="to-top-btn" type="button" onclick="totopBtn()" id="totopBtn" title="go to top">
+        <!-- icon up div -->
+        <div class="iconup-div px-auto">
+            <span class="px-auto mx-auto">
+                <i class="fa-solid fa-angle-up fs-6 mt-1 px-auto mx-auto"></i>
+            </span>
+        </div>
+        <!-- end icon up div -->
+        <!-- effect text div -->
+        <div class="effect-div-totopbtn">
+            <span class="d-block pt-1">
+                <i class="fa-solid fa-angle-up"></i>
+                <p class="pb-1">To top</p>
+            </span>
+        </div>
+        <!-- end effect text div -->
+    </button>
+    <!-- end to top button -->
+    <!-- header -->
+    <header id="header" class="h-auto">
+        <div class="w-100 header-bgimg">
+
+            <!-- navigation div -->
+            <div id="nav-container" class="fixed-top hovereffect-nav d-none d-xl-block d-xxl-block">
+                <!-- navigation -->
+                <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+                    <!-- nav-item container -->
+                    <div class="container-fluid h-auto">
+                        <!-- nav icon -->
+                        <a class="navbar-brand ms-2" href="../index.html">
+                            <img src="../img/icon.png" alt="HOME icon" class="nav-icon" />
+                        </a>
+                        <!-- end nav icon -->
+                        <!-- toggler button for responsive -->
+                        <!-- <input type="checkbox" id="active-nav-effect" class=" d-block d-xl-none d-xxl-none">
+                        <label for="active" class="responsivenav-menubtn d-block d-xl-none d-xxl-none">
+                            <i class="fas fa-bars responsivenav-menubtn-i"></i>
+                        </label> -->
+                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                        </button> -->
+                        <!-- end toggler button for responsive -->
+                        
+                        <!-- navbar-item container -->
+                        <div class="collapse navbar-collapse d-xl-block d-xxl-block d-none" id="navContent">
+                            <ul class="navbar-nav mx-auto my-lg-0">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="blog-collection.html#blog">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown mx-2">
+                                    <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="service-tests.html#test" title="Get to know your current mental health condition">Tests</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="service-relax.html">Relax for two minutes</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="service-daily-affirmation.html">Daily affirmation</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="chat.html" title="Open up everything freely">Chat</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link"  href="about.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="../index.html#contact-section">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- signin/up div -->
+                            <div class="signinup-div h-auto d-flex">
+                                <!-- signin-btn -->
+                                <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                    <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                                </a>
+                                <!-- end signin-btn -->
+                                <!-- signup-btn -->
+                                <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                    <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                                </a>
+                                <!-- end signup-btn -->
+                            </div>
+                            <!-- end signin/up div -->
+                        </div>
+                        <!-- end navbar-item container -->
+                    </div>
+                    <!-- end nav-item container -->
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <!-- end navigation div -->
+
+            
+            <!-- responsive navigation div -->
+            <div id="nav-container" class="fixed-top d-block d-xl-none d-xxl-none">
+                <!-- navigation -->
+                <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+                    <!-- nav-item container -->
+                    <div class="container-fluid h-auto">
+                        <!-- nav icon -->
+                        <a class="navbar-brand ms-2 responsive-homeicon" href="../index.html">
+                            <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-25" />
+                        </a>
+                        <!-- end nav icon -->
+                        <!-- toggler button for responsive -->
+                        <input type="checkbox" id="active-nav-effect" class="d-none">
+                        <label for="active-nav-effect" class="responsivenav-menubtn d-block d-xl-none d-xxl-none rounded-circle">
+                            <span></span>
+                        </label>
+                         <label for="active-nav-effect" class="close"></label>
+                        <!-- end toggler button for responsive -->
+                        
+                        <!-- navbar-item container -->
+                        <div class="responsive-nav wrapper" id="navContent">
+                            <!-- nav icon -->
+                            <a class="navbar-brand ms-lg-2 m-0" href="../index.html">
+                                <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-50 w-lg-auto w-xl-auto w-xxl-auto pt-5" />
+                            </a>
+                            <!-- end nav icon -->
+                            <ul class="mx-auto my-lg-0 responsive-ul">
+                                    
+                                <li class="nav-item mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="blog-collection.html#blog">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown mx-auto my-4 w-auto">
+                                    <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-tests.html#test" title="Get to know your current mental health condition">Tests</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-relax.html">Relax for two minutes</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-daily-affirmation.html">Daily affirmation</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="chat.html" title="Open up everything freely">Chat</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item  mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="about.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="../index.html#contact-section">
+                                        Contact us
+                                    </a>
+                                </li>
+                                <!-- signin/up div -->
+                                <div class="signinup-div w-100 h-auto d-flex">
+                                    <!-- signin-btn -->
+                                    <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                        <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                                    </a>
+                                    <!-- end signin-btn -->
+                                    <!-- signup-btn -->
+                                    <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                        <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                                    </a>
+                                    <!-- end signup-btn -->
+                                </div>
+                                <!-- end signin/up div -->
+                            </ul>
+                        </div>
+                        <!-- end navbar-item container -->
+                    </div>
+                    <!-- end nav-item container -->
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <!-- end responsive navigation div -->
+            <!-- header-bg div -->
+            <!-- <video autoplay muted loop id="headerVideo" class="d-block h-100 w-100">
+                <source src="../media/h-bgvd.mp4" type="video/mp4">
+            </video> -->
+        </div>
+        <!-- quote div -->
+        <!-- <div class="py-5 col-12 header-quote-div">
+            <h1 class="text-center header-quote py-4">"It's OK to not be OK."</h1>
+        </div> -->
+        <!-- end quote div -->
+        <!-- end header-bg div -->
+		<!-- best ways to apologize header -->
+		<div class="px-auto bigdiv_apologize">
+            <div class="bigtext_blogtext  px-auto text-center text-white col-11 mx-auto" onmouseenter="waveHover()" onmouseleave="waveHoverout()">
+                <span>L</span><span>i</span><span>f</span><span>e</span>
+                <span> </span>
+                <span>i</span><span>s</span>
+                <span>  </span>
+                <span>t</span><span>o</span><span>o</span>
+                <span>  </span>
+                <span>s</span><span>h</span><span>o</span><span>r</span><span>t</span>
+                <span>  </span>
+                <span>n</span><span>o</span><span>t</span>
+                <span>  </span>
+                <span>t</span><span>o</span>
+                <span> </span>
+                <span>f</span><span>o</span><span>r</span><span>g</span><span>i</span><span>v</span><span>e</span>
+			</div>
+        </div>
+        <!-- end best ways to apologize header -->
+  
+    </header>
+    <!-- end header -->
+
+	<!-- section  -->
+	<section id="best-apologize" class="bg-light col-11 mx-auto py-5">
+
+
+        <!-- best ways to apologize blogs -->
+	    <div class="apologize-way container">
+	    	<!-- Types of best ways to apologize -->
+			<div class="mt-3">
+				<h3 class="ms-5">The art of a heartfelt apology</h3>
+				
+				<br/> <h4>Facts</h4>
+				<p class="ms-4">Apology is often said to play an important role in reconciliation. On a
+				plausible interpretation of that claim, apology has this important role
+				because the performance of an apology provides us with new practical reasons, reasons to change the way we relate to the wrongdoer. But if this
+				is right, what kinds of reasons are they, and why is an apology necessary (and
+				sufficient) to provide us with such reasons.
+				
+				<ul>
+					<li> It shows an inner strength.</li>			
+					<li>It’s good for your heart.</li>
+					<li>It brings peace into relationships.</li>
+					<li>It makes you more careful in how you treat others.</li>
+					
+				</ul>
+				
+			</div>
+
+		<hr/>
+			<!-- Start tips div -->
+			<div class="apologize-tip container-fluid my-5">
+				<div class="d-xl-flex d-xxl-flex d-block c0l-12 apologize-intro">
+					<!-- tips with text -->
+					<div class="col-xl-6 col-xxl-6 col-10 mx-auto">
+						<h2 class="text-center"> Best ways to apologize</h2>
+
+						<p class="mt-3">Apologizing is an important skill that can help repair relationships and resolve conflicts. Here are some best ways to apologize: 
+							<br/>
+
+							<br/>• Acknowledgment of Responsibility
+							<br/>• Expression of Remorse
+
+
+							<br/>• Learn from your mistake
+							<br/>• Show that you’re sorry
+
+							<br/>• Reaffirm Boundaries
+							<br/>• Offer to make amends
+
+							<br/>• Empathy and Understanding
+							<br/>• Listen actively
+
+							<br/>• Rebuilding Trust
+							<br/>• Conflict Resolution									
+						</p>
+						
+						
+					</div>
+					<!-- end tips with text -->
+
+					<div class="col-xl-6 col-xxl-6 col-12  mx-auto">
+						<img src="../img2/apologize-header.jpg" class="w-100" alt="image for the tips relate with the best ways to apologize">
+					
+					</div>
+						
+				</div>
+				<!-- end tips div -->
+				
+			</div>
+			<!-- end tips -->
+			<!-- quotes -->
+			<div class="apologize_quote shadow-lg p-5 mb-5 bg-body rounded-3 w-75 h-25 mx-auto text-center mt-5" id="">
+            “Let us forgive each other—only then will we live in peace.”
+        	</div>
+        	<!-- end quotes -->
+
+			<!-- first section -->
+			<div class="container-fluid apologize-blog mx-auto mt-5">
+				<div class="row">
+
+					<div class="col-lg-5 col-md-12 card mx-auto mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5 mt-xs-5">
+						<img src="../img2/action.jpg" alt="Image relate with Acknowledgment of Responsibility">
+						<div class="card-body">
+							<h5>Acknowledgment of Responsibility</h5>
+							<p class="card-text">When we apologize, we acknowledge our responsibility for our actions or behavior that caused harm to someone else. This acknowledgement helps us take ownership of our actions and shows that we understand the impact our behavior had on the other person.
+								<br/>
+							Avoid using vague or evasive language, or wording an apology in a way that minimizes the offense or questions whether the victim was really hurt.
+
+							A good apology includes showing you’re aware of how your actions have impacted the other person. This tells them you understand why they feel hurt.
+							For example, you might say: 
+
+							    
+							<br/>• ‘I understand you must have felt really upset, angry and confused.’
+							<br/>• "When I said [the hurtful thing], I wasn’t thinking. I realize I hurt your feelings, and I’m sorry,"
+							
+							</p>
+						</div>
+					</div>
+
+					
+					<div class="col-lg-5 col-md-12 mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5  mt-xs-5 card mx-auto">
+						<img src="../img2/explaining.jpeg" alt="Image relate with Explaining in conflict">
+						<div class="card-body">
+							<h5>Explain what happened</h5>
+							<p class="card-text">
+							The best way to show that you are sorry is to accept the blame and make amends. It’s important not to offer excuses or try to paint yourself in a good light. Be sincere and show that you understand the consequences of your actions by offering a solution.
+							The challenge here is to explain how the offense occurred without excusing it. In fact, sometimes the best strategy is to say there is no excuse. <br/>
+							Keep it short and clear.In a moment I’ll show you exactly how to do that by putting this all together but for now, here are some short explanations you can use:
+
+							<br/>• I really didn’t mean for that to happen.
+							<br/>• It was an accident.
+							<br/>• That was not what I intended.
+							
+							</p>
+						</div>
+					</div>			
+						
+					
+					
+				</div>
+			</div>
+			<!--end first section -->
+
+			<!-- second section -->
+			<div class="container-fluid apologize-blog mx-auto mt-5">
+				<div class="row">
+
+					
+
+					<div class="col-lg-5 col-md-12  card mx-auto mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5 mt-xs-5">
+						<img src="../img2/express-sad.jpg" alt="Image relate with Expression of Remorse">
+						
+						<div class="card-body">
+							<h5>Expression of Remorse</h5>
+							<p class="card-text">
+								 
+								Apologizing involves expressing genuine remorse for our actions. This expression of regret helps the other person understand that we are truly sorry for what we did and that we are committed to making amends. If you regret the error or feel ashamed or humiliated, say so: this is all part of expressing sincere remorse.<br/>When learning how to apologize effectively, it’s important to understand the value of expressing regret. 
+								Say these when you want to apologize:
+
+							<br/>• "I wish I could take it back."
+							<br/>• "I wish I had been more thoughtful."
+							<br/>• "I wish I’d thought of your feelings as well."
+							<br/>These are all expressions of regret that add to the sincerity of your apology and let the other person know you care.
+							
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-12 card mx-auto mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5 mt-xs-5">
+						<img src="../img2/learn.jpeg" alt="Image relate with Learn from your mistake">
+						<div class="card-body">
+							<h5>Learn from your mistake</h5>
+							<p class="card-text">
+								Making mistakes at work can be inevitable, but it can also be a valuable growth experience. Everyone is likely to make a mistake at some point but you can turn a mistake into a positive situation by using it as an opportunity to learn and become better at your job by not making the same mistakes again.
+								Just like failures, you can “seize mistakes” and learn from them. Don't let these opportunities go wasted. You can gain wisdom from your mistakes and fast-track the process of self-improvement. The important thing is to view mistakes as gateways to improvements in life.
+
+								<br/>• Understanding why mistakes happen and then not repeating them.
+								<br/>• Don't waste time trying to justify your actions
+								<br/>• Mistakes give opportunities to learn, grab them
+							</p>
+
+						</div>
+					</div>
+
+					
+					
+				</div>
+			</div>
+			<!--end second section -->
+
+			<!-- third section -->
+			<div class="container-fluid apologize-blog mx-auto mt-5">
+				<div class="row">
+
+					<div class="col-lg-5 col-md-12 card mx-auto mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5">
+						<img src="../img2/show-sorry.jpeg" alt="Image relate with Show that you’re sorry">
+						<div class="card-body">
+							<h5>Show that you’re sorry</h5>
+							<p class="card-text">Showing, not just saying, that you regret what you have done is an important part of apologising. If possible, think about how you can fix the problem and make things right. For example, if you lost or broke something that belonged to someone else, you could help them replace it.
+							<br/>In this instance, the best thing to do is to make sure it doesn’t happen again, and to show by your actions that you’re sincerely sorry. If you’ve realised that there’s a problem that you can work on, you could also mention this, to show that you’re taking steps to make sure it doesn’t happen again.
+							<br/>For example, you might say: 
+							<br/>• ‘I realise that I struggle with controlling my anger, and it’s not fair to other people when I snap at them. 
+							<br/>• I’m trying to be more aware of when this happens.’
+							<br/>It takes a lot of courage to admit that you’ve made a mistake and to apologise for it. It’ll be scary at first, but in the long run, learning how to do this sincerely can really improve your relationships with the people around you. You’ve got this.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-12 mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5  mt-sm-5 card mx-auto">
+						<img src="../img2/reffirm.jpg" alt="Image relate with Reaffirm Boundaries">
+						<div class="card-body">
+							<h5>Reaffirm Boundaries</h5>
+							<p class="card-text">One of the most important parts of an apology and one of the best reasons to apologize is to reaffirm boundaries. Healthy boundaries are important in any relationship. <br/>When you come into conflict with someone, often a boundary is crossed. If a social rule is violated or trust is broken, an apology helps to affirm what kind of future behavior is preferred.Discussing what type of rules you both will adhere to in the future will rebuild trust, boundaries, and positive feelings. It provides a natural segue out of the conflict and into a happier future in the relationship.<br/>For example, you and your partner, friend, or family member can discuss things you won't tolerate, including:
+
+							<br/>• Disrespect
+							<br/>• Cheating
+							<br/>• Lying
+							<br/>• Gaslighting
+							<br/>• Mistrust
+							<br/>• Shouting<br/>
+							In addition, if you're having trouble agreeing on these boundaries, you and your loved one may benefit from seeing a family therapist or couples counselor.</p>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+			<!--end third section -->
+
+			<!-- fourth section -->
+			<div class="container-fluid apologize-blog mx-auto mt-5">
+				<div class="row">
+
+
+					<div class="col-lg-5 col-md-12 card mx-auto">
+						<img src="../img2/open.jpg" alt="Image relate with offer to make amends">
+						<div class="card-body">
+							<h5>Offer to make amends</h5>
+							<p class="card-text"> Offer to make things right and take steps to rectify the situation. Depending on the circumstances, this might involve compensating someone for their losses or making changes to prevent the same mistake from happening again.
+							<br/>If you have damaged someone’s property, have it repaired or replace it. When the offense has hurt someone’s feelings, acknowledge the pain and promise to try to be more sensitive in the future.<br/>If there’s anything you can do to amend the situation, do it. It’s important to know how to apologize with sincerity, and part of that sincerity is a willingness to act.<br/>
+
+							Say When You Make Amends
+							<br/>• If you broke something: "How can I replace it?"
+							<br/>• If you said something hurtful: "I know my words hurt you. I should have never spoken that way to someone I love and respect. I'll do my best to think before I speak in the future."
+							<br/>• If you broke trust: "Is there anything I can do right now to help build your trust?"
+							<br/>Whatever you can do to make things better, do it. If you’re not sure what would help, ask the other person.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-12 mt-xl-1 mt-xxl-1 mt-lg-1 mt-md-5 mt-sm-5 card mx-auto">
+						<img src="../img2/understanding.jpeg" alt="Image relate with empathy and understanding">
+						<div class="card-body">
+							<h5>Empathy and Understanding</h5>
+							<p class="card-text">Apologizing requires empathy and understanding of the other person's perspective. When we apologize, we try to understand the other person's feelings and how our actions affected them. This helps us develop a deeper understanding of the situation and the impact of our behavior.<br/>Empathy heals wounds while apology merely acknowledges them. This ability to actually reach out and touch the pain of another is necessary to achieve a deeper level of healing in a relationship. 
+
+							<br>Instead of that automatic “I’m sorry,” try to dig deep and express empathy of the emotion the person is feeling. The idea here is to share the fact that you connect with their struggle, and that you know what they’re going through:
+
+							<br/>• “You must be so frustrated that you missed that opportunity!”
+							<br/>• “I know this whole situation has to be so hard on you.”
+							<br/>• “It sounds really difficult, tackling all of that alone without the help you need.”
+							<br/>• “I can’t imagine what you’re going through” 
+						 	<br/>• “I’ve never been in your situation, but it must be incredibly difficult.” </p>
+						</div>
+					</div>					
+										
+				</div>
+			</div>
+			<!--end fourth section -->
+
+			<!--  Listen actively section -->
+			<div class=" listen-div mx-auto mt-5 container-fluid">
+				<div class="row ">
+					<div class="col-xl-6 col-md-12 listen-text ">
+						<h5 class="text-center">Listen actively</h5>
+							<p class="mt-4">
+							An apology isn’t a one-sided conversation. To understand how they were impacted by your actions; you must listen to allow them to express their feelings and learn their perspective of the situation. When someone is explaining to you why something that you did was hurtful to them, it’s easy to ignore what they’re saying and directly jump into defense mode to rationalize your behavior. Allowing the other person to speak and allowing yourself to absorb what they’re saying before reacting is great practice to enhance your active listening skills.
+							<br/>• Restate: This shows that you are listening to what is being said.
+							<br/>• Paraphrase: Use your own words to state what you think the other person meant. This helps the other person know you have heard them and do understand what they are trying to say.
+							<br/>• Summarize: Paraphrase what you have heard, including any emotion that you feel in the other person’s message. Use phrases like: “it sounds like you feel,” or “I believe that you feel…” This can confirm the other’s feelings in the context of the discussion, and often helps them to move on and pursue constructive solutions to the conflict.
+							<br/>• Reframe: A KEY opportunity to describe what you believe the other person really wants, which can lead to thinking about constructive solutions to problems. Use neutral language, or err on the side of more positive statements.
+
+							</p>
+					</div>
+					<div class="col-xl-6 col-md-12" >
+						<img src="../img2/listen.jpg" alt="Image of listen actively">
+					</div>		
+				</div>
+						
+				
+			</div>
+			<!-- end  Listen actively section -->
+			<!-- rebuilding section -->			
+
+			<div class="rebuilding-div mx-auto mt-5 d-flex container-fluid">
+				<div class="row">
+					<div class="col-xl-6 col-md-12 ">
+						<img src="../img2/trust.jpeg" alt="Image of rebuilding trust">
+					</div>
+					
+					<div class="rebuilding-text col-xl-6 col-md-12 mt-md-3 mt-sm-3 mt-lg-1">
+						<h5 class="text-center">Rebuilding Trust</h5>
+						<p class="mt-4">Apologizing is often an important step in rebuilding trust after a breach. When we apologize, we are taking steps to repair the relationship by showing that we are willing to take responsibility for our actions and make amends for the harm we caused.
+								<br/>
+
+							Rebuilding trust in relationships requires us to be vulnerable and courageous. We must deal with the past and acknowledge we did something wrong, address the present and apologize for our behavior, and move into the future and act in ways that repair the damage we caused. However, the net result can be even stronger levels of trust. Relationships that have experienced the crucible of broken trust can come out stronger on the other side if both parties are willing to engage in this hard work to get to a place of healing and restoration.  
+								<br/> • The first thing to deal with to restore trust is the past.
+								<br/> • The second thing to address in restoring trust is the present.
+								<br/> • The third thing to address when restoring trust is the future and you do this by determining how you’re going to act moving forward. 
+								  
+						</p>
+					</div>
+				</div>
+				
+				
+			</div>
+			<!-- end Rebuilding section -->
+
+			
+			<!--end last section -->
+			
+	    </div>	
+    <!-- end find mental_health blogs -->    
+	</section>
+	<!-- end section -->
+
+
+
+
+    <!-- footer -->
+    <footer id="footer" class="pt-1 h-auto">
+        <!-- first footer part -->
+        <div class="col-11 mx-auto my-1 d-lg-flex d-xl-flex d-xxl-flex d-block py-4">
+            <!-- features div -->
+            <div class="col-lg-2 col-xl-2 col-xxl-3 col-11 mx-auto ms-lg-5 ms-xl-5 ms-xxl-5">
+                <!-- heading -->
+                <div class="d-flex border-bottom border-dark pb-3 mt-2 h feature-heading text-center text-xxl-start text-xl-start justify-content-center justify-content-lg-start justify-content-xl-start justify-content-xxl-start">
+                    <h4 class="mt-2">Features</h4>
+                    <div class="feature-icon ms-2 pt-2">
+                        <svg version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" class="svg-feature">
+                            <g>
+                                <path d="m930 552.86h-660c-6.9297 0-13.191-4.168-15.836-10.582-2.6602-6.4102-1.1875-13.777 3.7148-18.684l289.72-289.7c4.1367-4.1367 10.078-5.875 15.836-4.6211 5.707 1.2734 10.379 5.375 12.387 10.883 3.7031 10.164 13.43 16.996 24.176 16.996s20.473-6.832 24.191-17.008c2.0078-5.5078 6.6797-9.5938 12.406-10.863 5.6602-1.2539 11.668 0.48437 15.82 4.6211l289.7 289.7c4.9062 4.9062 6.3789 12.27 3.7148 18.684-2.6445 6.4062-8.9062 10.574-15.836 10.574zm-618.62-34.285h577.23l-245.5-245.51c-11.102 11.469-26.586 18.367-43.109 18.367-16.539 0-32.008-6.8984-43.109-18.348z"></path>
+                                <path d="m986.48 1028.6h-772.97c-23.203 0-42.086-18.883-42.086-42.086v-425.82c0-23.203 18.883-42.09 42.086-42.09h772.97c23.203 0 42.086 18.887 42.086 42.09v425.82c0 23.203-18.883 42.086-42.086 42.086zm-772.97-475.71c-4.3008 0-7.8008 3.5-7.8008 7.8047v425.82c0 4.3008 3.5 7.8008 7.8008 7.8008h772.97c4.3008 0 7.8008-3.5 7.8008-7.8008v-425.82c0-4.3047-3.5-7.8047-7.8008-7.8047z"></path>
+                                <path d="m599.92 935.74c-89.332 0-162-72.758-162-162.17 0-89.414 72.672-162.17 162-162.17 89.414 0 162.17 72.758 162.17 162.17-0.003906 89.414-72.758 162.17-162.17 162.17zm0-290.05c-70.43 0-127.72 57.371-127.72 127.89 0 70.512 57.289 127.89 127.72 127.89 70.512 0 127.89-57.371 127.89-127.89-0.003907-70.516-57.375-127.89-127.89-127.89z"></path>
+                                <path d="m576.71 838.07c-4.5547 0-8.9062-1.8086-12.121-5.0234l-48.113-48.129c-6.6953-6.6953-6.6953-17.543 0-24.242 6.6953-6.6953 17.543-6.6953 24.242 0l35.992 36.012 82.582-82.582c6.6953-6.6953 17.543-6.6953 24.242 0 6.6953 6.6953 6.6953 17.543 0 24.242l-94.703 94.703c-3.2148 3.2109-7.5703 5.0195-12.121 5.0195z"></path>
+                                <path d="m600 291.43c-25.113 0-47.777-15.887-56.383-39.559-2.3633-6.1445-3.6172-13.125-3.6172-20.441 0-33.082 26.918-60 60-60s60 26.918 60 60c0 7.3477-1.2383 14.312-3.6992 20.727-8.5391 23.387-31.207 39.273-56.301 39.273zm0-85.715c-14.18 0-25.715 11.535-25.715 25.715 0 3.0625 0.50391 5.9766 1.4414 8.4375 3.8008 10.445 13.527 17.277 24.273 17.277s20.473-6.832 24.191-17.008c1.0391-2.6992 1.5234-5.6094 1.5234-8.707 0-14.18-11.535-25.715-25.715-25.715z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <!-- end heading -->
+                <!-- links list ul -->
+                <ul class="mt-4">
+                    <li class="footer-feature-li my-2">
+                        <a href="blog-collection.html#blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../index.html#service">
+                            Service
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="about.html#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../media/terms_condition_data.docx">
+                            Terms and condition
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../media/citation.docx">
+                            Citation
+                        </a>
+                    </li>
+                </ul>
+                <!-- end links list ul -->
+            </div>
+            <!-- end features div -->
+            <!-- icon div -->
+            <!-- <div class="col-lg-4 col-xl-4 col-xxl-4 mx-auto ps-1">
+                <a href="index.html">
+                    <img src="img/icon.png" alt="HOME icon" class="p-5" />
+                </a>
+            </div> -->
+            <!-- icon div -->
+            <!-- contact us div -->
+            <div id="contact-section" class="col-lg-6 col-xl-6 col-xxl-6 col-11 mx-auto my-1 mt-lg-0 mt-xl-0 mt-xxl-0 mt-5">
+                <!-- heading contact us -->
+                <h4 class="border-bottom border-dark pb-3 mb-4">Contact us</h4>
+                <!-- end heading contact us -->
+                <!-- contact us form -->
+                <form action="" method="post " class="mt-2">
+                    <!-- name -->
+                    <div class="mb-3 d-xl-flex">
+                        <input type="text" class="form-control" id="contactInputName" placeholder="Name">
+                    </div>
+                    <!-- end name -->
+                    <!-- email -->
+                    <div class="mb-3 d-lg-flex d-xl-flex d-xxl-flex">
+                        <input type="email" class="form-control" id="contactInputEmail" aria-describedby="emailHelp" placeholder="Email address">
+                    </div>
+                    <!-- end email -->
+                    <!-- PhoneNumber -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="contactInputPhoneNumber" placeholder="Phone number">
+                    </div>
+                    <!-- end PhoneNumber -->
+                    <!-- message -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control py-4" id="contactInputmessage" placeholder="Message">
+                    </div>
+                    <!-- end message -->
+                    <!-- send btn -->
+                    <button type="submit" class="btn btn-primary d-flex sendmsg-div sendbtn-footer px-2 py-2">
+                        <div class="send-svg-div">
+                            <div class="ssend-svg-div">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="me-2">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                              </div>
+                        </div>
+                        <span class="send-span pe-1">
+                            Send
+                        </span>
+                    </button>
+                    <!-- end send btn -->
+                <!-- end contact us form -->
+            </div>
+            <!-- contact us div -->
+        </div>
+        <!-- end first footer part -->
+
+        <!-- second footer part-->
+        <div class="d-flex s-footer pb-1">
+            <!-- copy right -->
+            <span class="fst-italic ms-4 mt-3 col-7">
+                @2023 HOME
+            </span>
+            <!-- end copy right -->
+            <!-- social media ul -->
+            <ul class="d-flex mx-auto icon-ul-footer">
+                <!-- facebook -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end facebook -->
+                <!-- instagram -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end instagram -->
+                <!-- twitter -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end twitter -->
+                <!-- youtube -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-youtube fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end youtube -->
+            </ul>
+            <!-- end social media ul -->
+        </div> 
+        <!-- end second footer part-->  
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- link with javascript -->
+    <script src="../javascript/js.js"></script>
+    <!-- end link with javascript -->
+
+	
+</body>
+</html>

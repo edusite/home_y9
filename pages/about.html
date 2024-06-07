@@ -1,0 +1,666 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+	<link rel="icon" type="icon/image" href="../img/icon.png">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</head>
+<body id="body content" class="bg-light">
+
+    <!-- to top button -->
+    <button class="to-top-btn" type="button" onclick="totopBtn()" id="totopBtn" title="go to top">
+        <!-- icon up div -->
+        <div class="iconup-div px-auto">
+            <span class="px-auto mx-auto">
+                <i class="fa-solid fa-angle-up fs-6 mt-1 px-auto mx-auto"></i>
+            </span>
+        </div>
+        <!-- end icon up div -->
+        <!-- effect text div -->
+        <div class="effect-div-totopbtn">
+            <span class="d-block pt-1">
+                <i class="fa-solid fa-angle-up"></i>
+                <p class="pb-1">To top</p>
+            </span>
+        </div>
+        <!-- end effect text div -->
+    </button>
+    <!-- end to top button -->
+    <!-- header -->
+    <header id="header" class="h-auto">
+        <div class="w-100 header-bgimg">
+
+            <!-- navigation div -->
+            <div id="nav-container" class="fixed-top hovereffect-nav d-none d-xl-block d-xxl-block">
+                <!-- navigation -->
+                <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+                    <!-- nav-item container -->
+                    <div class="container-fluid h-auto">
+                        <!-- nav icon -->
+                        <a class="navbar-brand ms-2" href="../index.html">
+                            <img src="../img/icon.png" alt="HOME icon" class="nav-icon" />
+                        </a>
+                        <!-- end nav icon -->
+                        <!-- toggler button for responsive -->
+                        <!-- <input type="checkbox" id="active-nav-effect" class=" d-block d-xl-none d-xxl-none">
+                        <label for="active" class="responsivenav-menubtn d-block d-xl-none d-xxl-none">
+                            <i class="fas fa-bars responsivenav-menubtn-i"></i>
+                        </label> -->
+                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                        </button> -->
+                        <!-- end toggler button for responsive -->
+                        
+                        <!-- navbar-item container -->
+                        <div class="collapse navbar-collapse d-xl-block d-xxl-block d-none" id="navContent">
+                            <ul class="navbar-nav mx-auto my-lg-0">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="blog-collection.html#blog">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown mx-2">
+                                    <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="service-tests.html#test" title="Get to know your current mental health condition">Tests</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="service-relax.html">Relax for two minutes</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="service-daily-affirmation.html">Daily affirmation</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="chat.html" title="Open up everything freely">Chat</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link"  href="about.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="../index.html#contact-section">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- signin/up div -->
+                            <div class="signinup-div h-auto d-flex">
+                                <!-- signin-btn -->
+                                <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                    <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                                </a>
+                                <!-- end signin-btn -->
+                                <!-- signup-btn -->
+                                <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                    <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                                </a>
+                                <!-- end signup-btn -->
+                            </div>
+                            <!-- end signin/up div -->
+                        </div>
+                        <!-- end navbar-item container -->
+                    </div>
+                    <!-- end nav-item container -->
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <!-- end navigation div -->
+
+            
+            <!-- responsive navigation div -->
+            <div id="nav-container" class="fixed-top d-block d-xl-none d-xxl-none">
+                <!-- navigation -->
+                <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+                    <!-- nav-item container -->
+                    <div class="container-fluid h-auto">
+                        <!-- nav icon -->
+                        <a class="navbar-brand ms-2 responsive-homeicon" href="../index.html">
+                            <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-25" />
+                        </a>
+                        <!-- end nav icon -->
+                        <!-- toggler button for responsive -->
+                        <input type="checkbox" id="active-nav-effect" class="d-none">
+                        <label for="active-nav-effect" class="responsivenav-menubtn d-block d-xl-none d-xxl-none rounded-circle">
+                            <span></span>
+                        </label>
+                         <label for="active-nav-effect" class="close"></label>
+                        <!-- end toggler button for responsive -->
+                        
+                        <!-- navbar-item container -->
+                        <div class="responsive-nav wrapper" id="navContent">
+                            <!-- nav icon -->
+                            <a class="navbar-brand ms-lg-2 m-0" href="../index.html">
+                                <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-50 w-lg-auto w-xl-auto w-xxl-auto pt-5" />
+                            </a>
+                            <!-- end nav icon -->
+                            <ul class="mx-auto my-lg-0 responsive-ul">
+                                    
+                                <li class="nav-item mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="blog-collection.html#blog">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown mx-auto my-4 w-auto">
+                                    <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-tests.html#test" title="Get to know your current mental health condition">Tests</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-relax.html">Relax for two minutes</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-daily-affirmation.html">Daily affirmation</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="chat.html" title="Open up everything freely">Chat</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item  mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="about.html">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="../index.html#contact-section">
+                                        Contact us
+                                    </a>
+                                </li>
+                                <!-- signin/up div -->
+                                <div class="signinup-div w-100 h-auto d-flex">
+                                    <!-- signin-btn -->
+                                    <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                        <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                                    </a>
+                                    <!-- end signin-btn -->
+                                    <!-- signup-btn -->
+                                    <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                        <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                                    </a>
+                                    <!-- end signup-btn -->
+                                </div>
+                                <!-- end signin/up div -->
+                            </ul>
+                        </div>
+                        <!-- end navbar-item container -->
+                    </div>
+                    <!-- end nav-item container -->
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <!-- end responsive navigation div -->
+            <!-- header-bg div -->
+            <video autoplay muted loop id="headerVideo" class="col-12">
+                <source src="../media/h-bgvd.mp4" type="video/mp4" class=" h-100 w-100 col-12">
+            </video>
+        </div>
+        <!-- end header-bg div -->
+        <!-- quote div -->
+        <div class="py-5 col-12 header-quote-div">
+            <h1 class="text-center header-quote py-4">"It's OK to not be OK."</h1>
+        </div>
+        <!-- end quote div -->
+    </header>
+    <!-- end header -->
+    
+
+
+
+
+    <!-- start about us -->
+    <section id="about" class="mx-auto">
+
+        <!-- start aim -->
+        <div id="aim" class="col-12 mx-auto">
+             
+            <div class="d-xxl-flex d-xxl-flex d-block mx-auto col-12">
+
+                <!-- aim text -->
+                <div class="col-xl-5 col-xxl-5 col-12 ms-xxl-5 ms-xl-4 aboutAim-textDiv">
+                    <!-- aim heading -->
+                    <div class="aboutAim-headingDiv mx-xl-5 mx-xxl-5 mx-auto col-10 text-center">
+                        <div class="text-center col-12 about-headings py-3 aboutAim-heading ">Aim</div>
+                        <div class="text-center col-12 about-headings py-3 aboutAim-heading ">Goal</div>
+                        <div class="text-center col-12 about-headings py-3 aboutAim-heading ">Purpose</div>
+                        <div class="text-center col-12 about-headings py-3 aboutAim-heading ">Intention</div>
+                        <div class="text-center col-12 about-headings py-3 aboutAim-heading ">Objective</div>
+                    </div>
+                    <!-- end aim heading -->
+                    <!-- img -->
+                    <div class="d-block d-xl-none d-xxl-none col-12 ms-auto aim-imgDiv">
+                        <img src="../images/aim.jpg" alt="aim-image" class="col-12">
+                        <div class="aim-abtoverlayDiv text-center">
+                            <div class="aim-abtoverlayText text-center">
+                                "Be a part of our home."
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end img -->
+                    <p class="text-indent aboutAim-p col-11 col-xl-12 col-xxl-12 mx-auto">
+                        About one-third of people around the world reported feeling stressed, worried, and/or angry in 2019. Stress, anxiety, anger, worries, depression and a lot more terrible feelings become part of our daily lives because we can’t manage both our feelings and problems at the same time. Plenty of people are trying to survive from those hunting emotions. That’s why we built HOME. But with HOME, they can rest and forget those problems for a while. HOME will provide you very special care and services freely. HOME will be your home, a place where you feel belong, a place where you can relax, a place where you can speak out what you feel and think openly and a place where you can learn to manage, fight and overcome your emotions, to love yourself and to live your life better. If you are angry, HOME will make you calm or will let you explode. If you are stressed, HOME will comfort you with relax timer, pleasant music and if you want to talk, you can tell in the chat. We believe and hope that our HOME is authentic and supportive because our aim is to offer a safe place for everyone to rest, relax and relieve.  
+                    </p>
+                </div>
+                <!-- end aim text -->
+                
+                <!-- img -->
+                <div class="col-6 d-none d-xl-block d-xxl-block ms-auto aim-imgDiv">
+                    <img src="../images/aim.jpg" alt="aim-image" class="col-12">
+                    <div class="aim-abtoverlayDiv text-center">
+                        <div class="aim-abtoverlayText text-center">
+                            "Be a part of our home."
+                        </div>
+                    </div>
+                 </div>
+                 <!-- end img -->
+            </div>
+            
+        </div>
+        <!-- end aim -->
+        <div class="aboutpp-container col-12">
+            <!-- about process and plan backgroun vd -->
+            <video autoplay muted loop id="abtVideo" class="h-auto col-12">
+                <source src="../media/about-bgVd.mp4" type="video/mp4">
+            </video>
+            <!-- end about process and plan backgroun vd -->
+            <div class="d-block d-xl-flex d-xxl-flex mx-auto aboutpp-containerDiv">                    
+                <!-- start process -->
+                <div id="process" class="card col-10 col-xl-5 col-xxl-5 mx-auto p-3">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <h1 class="card-title text-center about-ppheadings me-3">
+                                Our 
+                            </h1>
+                            <div class="aboutProcess-headingDiv">
+                                <div class="card-title text-start aboutProcess-heading about-ppheadings">
+                                    Process
+                                </div>
+                                <div class="card-title text-start aboutProcess-heading about-ppheadings">
+                                    Procedure
+                                </div>
+                                <div class="card-title text-start aboutProcess-heading about-ppheadings">
+                                    Activity
+                                </div>
+                                <div class="card-title text-start aboutProcess-heading about-ppheadings">
+                                    Approach
+                                </div>
+                            </div>
+                            
+                        </div>
+                                
+                        <p class="card-text mt-5 about-pp text-indent">
+                            HOME have 5 major services: tests for your mental health condition, mediation programs, relaxation timer, daily affirmation and chat to open freely. Our users’ favorite service is relaxation timer which let them take a full rest for a period. For now, we have 2M+ family members in HOME who improved effectively in their mental health suffering and management. 80% of the family members gave 4 out of 5 for staying in HOME. However, we are continuously processing to make HOME more convenient, more comfortable, warmer and safer. 
+                        </p> 
+                    </div>         
+                    
+                </div>
+                <!-- end process -->
+
+                <!-- start future plan -->
+                <div id="plan" class="card col-10 col-xl-5 col-xxl-5 mx-auto p-3">
+                    <div class="card-body">
+                    <h1 class="card-title text-center about-ppheadings">Our future plan</h1>
+                                
+                        <p class="card-text mt-3 about-pp text-indent">
+                            Since numerous family members are requesting for more music playlist and meditation programs, we are currently working for it. We have been planning to create more meditation programs with more coaches from different countries. You will be able to Relax with more choices for modes such as city mode, village mode, home mode, library mode and fantasy mode. In 2023 December, we are going to introduce you with the healing HOME art gallery which have a calm healing effect as its name. Something which we want to announce proudly is HOME application will be produced soon. HOME is always making sure that all the family members can rest, relax and relieve comfortably in our HOME.
+                        </p> 
+                    </div>
+                            
+                </div>
+                <!-- end process -->
+            </div>
+
+        </div>
+        
+    </div>
+    <!-- end future plan -->
+
+    <!-- start profile -->
+    <div id="profile" class="text-white col-12 py-5 px-5 about-profile-container">
+        
+        <h1 class="text-center my-5 about-headings text-white">Who we are</h1>
+        <!-- main row  -->
+        <div class="d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-block mt-5 col-12" id="pmain">
+            <!-- image section -->
+            <div class="col-11 col-md-9 col-lg-6 col-xl-6 col-xxl-6 mx-auto">
+                <!--start fist row -->
+                <div class="d-block main-profile">
+                    <div class="d-lg-flex d-xl-flex d-xxl-flex d-block mx-auto my-4">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-12 mx-auto px-auto col-12 profile-img-container" >                       
+                            <img 
+                            id="hm" onclick="hm()" src="../images/hm-preview.jpg" 
+                            class="rounded-circle mx-auto" alt=" Hayman Hnin Pwint Aung" 
+                           
+                            data-original="../images/hayman.jpg">
+                            <p class="my-1 mx-auto text-center " id="hayman"><br/>Founder</p>
+                            <p class="text-indent col-12 d-block d-xxl-none d-xl-none d-lg-none my-5">
+                                Hi! I'm the founder of HOME. When I was under pressure at a young age, I needed and wanted something which would guide me or somewhere where I can rest fully by leaving all my anxiety and stress behind. When pandemic occurred, I saw many people crying and depressing hopelessly. From that time, I started building my dream HOME to provide everyone a safe place. I was graduated from Harvard university with business management. I have a big family full with psychologists, doctors, therapists and experts in yoga and meditation. Welcome to HOME. Become a part of our HOME and rest in your safe place.
+                            </p>
+                                                                                       
+                        </div>
+                         <!-- secondprofile -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-12 mx-auto px-auto col-md-12 col-12 profile-img-container" id="ksp">
+                            
+                            <img id="ksp" onclick="ksp()" class="rounded-circle mx-auto" src="../images/ksp-preview.jpg" 
+                            alt="Kyal Sin Phyu"
+                            data-original="../images/kyalsinphyu.jpg"
+                            >
+                           
+                            <p class="my-1 mx-auto text-center" id="kyalsinphyu" > <br/>Head of theraphist</p>
+                            <p class="text-indent col-12 d-block d-xxl-none d-xl-none d-lg-none my-5">
+                                I will be more than happy to  help you if you reach out to me whenever you are feeling alone or drowned. I’m passionate in helping other people to heal their inner child and grow back it. I have been studying psychology since I was in 6th grade and now have finished my PDH. Your psycho therapist is here for you to help you. 
+                            </p>
+                                       
+                        </div>
+                    </div>
+
+                    <!--start second row -->
+
+                    <div class="d-lg-flex d-xl-flex d-xxl-flex d-block mx-auto my-4">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-12 mx-auto px-auto col-md-12 col-12 profile-img-container mt-3" id="mpc">                       
+                            <img onclick="mpc()"  src="../images/pc-preview.jpg" class="rounded-circle mx-auto" 
+                            alt="May Pan Chi  "
+                            data-original="../images/maypanchi.jpg" >
+    
+                            <p class="my-1 mx-auto text-center"  id="maypanchi"><br/>Yoga guide</p>
+                            <p class="text-indent col-12 d-block d-xxl-none d-xl-none d-lg-none my-5">
+                                Hello, I am May Panchi who can help you to relax.  I have been yoga instructor for 3 years and I also used to make motivational speech. I can explain you about the meaning of life and I can tell you how to live happily or how to love yourself.  If you are having too much stress, you can open up freely to me. 
+                            </p>
+    
+                                                                                
+                        </div>
+                         <!-- secondprofile -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-12 mx-auto px-auto col-md-12 col-12 mt-3 profile-img-container " id="mspk">
+                            
+                            <img id="ms" onclick="ms()" class="rounded-circle mx-auto" src="../images/ms-preview.jpg" 
+                            alt=" Myat Su Pyae Khaing" 
+                            data-original="../images/myatsu.jpg">
+                            <p class="my-1 mx-auto text-center" id="myatsu"> <br/>Motivation speaker</p>
+                            <p class="text-indent col-12 d-block d-xxl-none d-xl-none d-lg-none my-5">
+                                Hey, from now on I'm here to help with your mental health care. I can guide you how to be active and motivated yourself. I have been guide people to be a valuable person since last 2years. Everyone need someone who listen their emotions and understand their feelings. If u need that someone reach out to me.
+                            </p>
+                                       
+                        </div>  
+                    </div> 
+                </div>
+                     
+            </div>
+            <!--end profile-->
+
+            <!-- modal image -->
+            <div class="expand">
+                <img src="../images/hm.jpg" class="expand-img" alt="Expand the image when click on our profile" >
+                <p class="role"></p>
+            </div>
+
+            <!-- end modal image -->
+            <!-- text section -->
+            <!-- manman -->
+            <div class="col-6 d-none d-xxl-block d-xl-block d-lg-block">
+                <div id="hm-txt">
+                    <h2 class="my-3">
+                        Hayman Hnin Pwint Aung 
+                    </h2>
+                    <p class="text-indent">
+                        Hi! I'm the founder of HOME. When I was under pressure at a young age, I needed and wanted something which would guide me or somewhere where I can rest fully by leaving all my anxiety and stress behind. When pandemic occurred, I saw many people crying and depressing hopelessly. From that time, I started building my dream HOME to provide everyone a safe place. I was graduated from Harvard university with business management. I have a big family full with psychologists, doctors, therapists and experts in yoga and meditation. Welcome to HOME. Become a part of our HOME and rest in your safe place.
+                    </p>
+                </div>
+                <!-- kyal sin -->
+
+                <div id="ks-txt">
+                    
+                    <h2 class="my-3">
+                        Kyal Sin Phyu
+                    </h2>
+                    <p class="text-indent">
+                        I will be more than happy to  help you if you reach out to me whenever you are feeling alone or drowned. I’m passionate in helping other people to heal their inner child and grow back it. I have been studying psychology since I was in 6th grade and now have finished my PDH. Your psycho therapist is here for you to help you. 
+                    </p>
+                </div>
+
+                <!-- pan chi -->
+
+                <div id="pc-txt">
+                                        
+                    <h2 class="my-3">
+                        May Panchi
+                    </h2>
+                    <p class="text-indent">
+                        Hello, I am May Panchi who can help you to relax.  I have been yoga instructor for 3 years and I also used to make motivational speech. I can explain you about the meaning of life and I can tell you how to live happily or how to love yourself.  If you are having too much stress, you can open up freely to me. 
+                    </p>
+                </div>
+
+
+                <!-- me -->
+                
+                <div id="ms-txt">                                        
+                    <h2 class="my-3">
+                        Myat Su Pyae Khaing
+                    </h2>
+                    <p class="text-indent">
+                        Hey, from now on I'm here to help with your mental health care. I can guide you how to be active and motivated yourself. I have been guide people to be a valuable person since last 2years. Everyone need someone who listen their emotions and understand their feelings. If u need that someone reach out to me.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- end profile -->
+
+
+
+    <!-- footer -->
+    <footer id="footer" class="pt-1 h-auto">
+        <!-- first footer part -->
+        <div class="col-11 mx-auto my-1 d-lg-flex d-xl-flex d-xxl-flex d-block py-4">
+            <!-- features div -->
+            <div class="col-lg-2 col-xl-2 col-xxl-3 col-11 mx-auto ms-lg-5 ms-xl-5 ms-xxl-5">
+                <!-- heading -->
+                <div class="d-flex border-bottom border-dark pb-3 mt-2 h feature-heading text-center text-xxl-start text-xl-start justify-content-center justify-content-lg-start justify-content-xl-start justify-content-xxl-start">
+                    <h4 class="mt-2">Features</h4>
+                    <div class="feature-icon ms-2 pt-2">
+                        <svg version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" class="svg-feature">
+                            <g>
+                                <path d="m930 552.86h-660c-6.9297 0-13.191-4.168-15.836-10.582-2.6602-6.4102-1.1875-13.777 3.7148-18.684l289.72-289.7c4.1367-4.1367 10.078-5.875 15.836-4.6211 5.707 1.2734 10.379 5.375 12.387 10.883 3.7031 10.164 13.43 16.996 24.176 16.996s20.473-6.832 24.191-17.008c2.0078-5.5078 6.6797-9.5938 12.406-10.863 5.6602-1.2539 11.668 0.48437 15.82 4.6211l289.7 289.7c4.9062 4.9062 6.3789 12.27 3.7148 18.684-2.6445 6.4062-8.9062 10.574-15.836 10.574zm-618.62-34.285h577.23l-245.5-245.51c-11.102 11.469-26.586 18.367-43.109 18.367-16.539 0-32.008-6.8984-43.109-18.348z"></path>
+                                <path d="m986.48 1028.6h-772.97c-23.203 0-42.086-18.883-42.086-42.086v-425.82c0-23.203 18.883-42.09 42.086-42.09h772.97c23.203 0 42.086 18.887 42.086 42.09v425.82c0 23.203-18.883 42.086-42.086 42.086zm-772.97-475.71c-4.3008 0-7.8008 3.5-7.8008 7.8047v425.82c0 4.3008 3.5 7.8008 7.8008 7.8008h772.97c4.3008 0 7.8008-3.5 7.8008-7.8008v-425.82c0-4.3047-3.5-7.8047-7.8008-7.8047z"></path>
+                                <path d="m599.92 935.74c-89.332 0-162-72.758-162-162.17 0-89.414 72.672-162.17 162-162.17 89.414 0 162.17 72.758 162.17 162.17-0.003906 89.414-72.758 162.17-162.17 162.17zm0-290.05c-70.43 0-127.72 57.371-127.72 127.89 0 70.512 57.289 127.89 127.72 127.89 70.512 0 127.89-57.371 127.89-127.89-0.003907-70.516-57.375-127.89-127.89-127.89z"></path>
+                                <path d="m576.71 838.07c-4.5547 0-8.9062-1.8086-12.121-5.0234l-48.113-48.129c-6.6953-6.6953-6.6953-17.543 0-24.242 6.6953-6.6953 17.543-6.6953 24.242 0l35.992 36.012 82.582-82.582c6.6953-6.6953 17.543-6.6953 24.242 0 6.6953 6.6953 6.6953 17.543 0 24.242l-94.703 94.703c-3.2148 3.2109-7.5703 5.0195-12.121 5.0195z"></path>
+                                <path d="m600 291.43c-25.113 0-47.777-15.887-56.383-39.559-2.3633-6.1445-3.6172-13.125-3.6172-20.441 0-33.082 26.918-60 60-60s60 26.918 60 60c0 7.3477-1.2383 14.312-3.6992 20.727-8.5391 23.387-31.207 39.273-56.301 39.273zm0-85.715c-14.18 0-25.715 11.535-25.715 25.715 0 3.0625 0.50391 5.9766 1.4414 8.4375 3.8008 10.445 13.527 17.277 24.273 17.277s20.473-6.832 24.191-17.008c1.0391-2.6992 1.5234-5.6094 1.5234-8.707 0-14.18-11.535-25.715-25.715-25.715z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <!-- end heading -->
+                <!-- links list ul -->
+                <ul class="mt-4">
+                    <li class="footer-feature-li my-2">
+                        <a href="blog-collection.html#blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../index.html#service">
+                            Service
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="about.html#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../media/terms_condition_data.docx">
+                            Terms and condition
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../media/citation.docx">
+                            Citation
+                        </a>
+                    </li>
+                </ul>
+                <!-- end links list ul -->
+            </div>
+            <!-- end features div -->
+            <!-- icon div -->
+            <!-- <div class="col-lg-4 col-xl-4 col-xxl-4 mx-auto ps-1">
+                <a href="index.html">
+                    <img src="img/icon.png" alt="HOME icon" class="p-5" />
+                </a>
+            </div> -->
+            <!-- icon div -->
+            <!-- contact us div -->
+            <div id="contact-section" class="col-lg-6 col-xl-6 col-xxl-6 col-11 mx-auto my-1 mt-lg-0 mt-xl-0 mt-xxl-0 mt-5">
+                <!-- heading contact us -->
+                <h4 class="border-bottom border-dark pb-3 mb-4">Contact us</h4>
+                <!-- end heading contact us -->
+                <!-- contact us form -->
+                <form action="" method="post " class="mt-2">
+                    <!-- name -->
+                    <div class="mb-3 d-xl-flex">
+                        <input type="text" class="form-control" id="contactInputName" placeholder="Name">
+                    </div>
+                    <!-- end name -->
+                    <!-- email -->
+                    <div class="mb-3 d-lg-flex d-xl-flex d-xxl-flex">
+                        <input type="email" class="form-control" id="contactInputEmail" aria-describedby="emailHelp" placeholder="Email address">
+                    </div>
+                    <!-- end email -->
+                    <!-- PhoneNumber -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="contactInputPhoneNumber" placeholder="Phone number">
+                    </div>
+                    <!-- end PhoneNumber -->
+                    <!-- message -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control py-4" id="contactInputmessage" placeholder="Message">
+                    </div>
+                    <!-- end message -->
+                    <!-- send btn -->
+                    <button type="submit" class="btn btn-primary d-flex sendmsg-div sendbtn-footer px-2 py-2">
+                        <div class="send-svg-div">
+                            <div class="ssend-svg-div">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="me-2">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                              </div>
+                        </div>
+                        <span class="send-span pe-1">
+                            Send
+                        </span>
+                    </button>
+                    <!-- end send btn -->
+                <!-- end contact us form -->
+            </div>
+            <!-- contact us div -->
+        </div>
+        <!-- end first footer part -->
+
+        <!-- second footer part-->
+        <div class="d-flex s-footer pb-1">
+            <!-- copy right -->
+            <span class="fst-italic ms-4 mt-3 col-7">
+                @2023 HOME
+            </span>
+            <!-- end copy right -->
+            <!-- social media ul -->
+            <ul class="d-flex mx-auto icon-ul-footer">
+                <!-- facebook -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end facebook -->
+                <!-- instagram -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end instagram -->
+                <!-- twitter -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end twitter -->
+                <!-- youtube -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-youtube fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end youtube -->
+            </ul>
+            <!-- end social media ul -->
+        </div> 
+        <!-- end second footer part-->  
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- link with javascript -->
+    <script src="../javascript/js.js"></script>
+    <!-- end link with javascript -->
+    <script type="text/javascript" src="../javascript/js.js"></script>
+
+</body>
+</html>

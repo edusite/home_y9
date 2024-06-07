@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Finding your happiness</title>
+	<link rel="icon" type="icon/image" href="../img/icon.png">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+    <!-- to top button -->
+    <button class="to-top-btn" type="button" onclick="totopBtn()" id="totopBtn" title="go to top">
+        <!-- icon up div -->
+        <div class="iconup-div px-auto">
+            <span class="px-auto mx-auto">
+                <i class="fa-solid fa-angle-up fs-6 mt-1 px-auto mx-auto"></i>
+            </span>
+        </div>
+        <!-- end icon up div -->
+        <!-- effect text div -->
+        <div class="effect-div-totopbtn">
+            <span class="d-block pt-1">
+                <i class="fa-solid fa-angle-up"></i>
+                <p class="pb-1">To top</p>
+            </span>
+        </div>
+        <!-- end effect text div -->
+    </button>
+    <!-- end to top button -->
+    <!-- header -->
+    <header id="header" class="h-auto">
+        <div class="w-100 header-bgimg">
+
+            <!-- navigation div -->
+            <div id="nav-container" class="fixed-top hovereffect-nav d-none d-xl-block d-xxl-block">
+                <!-- navigation -->
+                <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+                    <!-- nav-item container -->
+                    <div class="container-fluid h-auto">
+                        <!-- nav icon -->
+                        <a class="navbar-brand ms-2" href="../index.html">
+                            <img src="../img/icon.png" alt="HOME icon" class="nav-icon" />
+                        </a>
+                        <!-- end nav icon -->
+                        <!-- toggler button for responsive -->
+                        <!-- <input type="checkbox" id="active-nav-effect" class=" d-block d-xl-none d-xxl-none">
+                        <label for="active" class="responsivenav-menubtn d-block d-xl-none d-xxl-none">
+                            <i class="fas fa-bars responsivenav-menubtn-i"></i>
+                        </label> -->
+                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+                        </button> -->
+                        <!-- end toggler button for responsive -->
+                        
+                        <!-- navbar-item container -->
+                        <div class="collapse navbar-collapse d-xl-block d-xxl-block d-none" id="navContent">
+                            <ul class="navbar-nav mx-auto my-lg-0">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="blog-collection.html#blog">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown mx-2">
+                                    <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="service-tests.html#test" title="Get to know your current mental health condition">Tests</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="service-relax.html">Relax for two minutes</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="service-daily-affirmation.html">Daily affirmation</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="chat.html" title="Open up everything freely">Chat</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link"  href="about.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="../index.html#contact-section">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- signin/up div -->
+                            <div class="signinup-div h-auto d-flex">
+                                <!-- signin-btn -->
+                                <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                    <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                                </a>
+                                <!-- end signin-btn -->
+                                <!-- signup-btn -->
+                                <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                    <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                                </a>
+                                <!-- end signup-btn -->
+                            </div>
+                            <!-- end signin/up div -->
+                        </div>
+                        <!-- end navbar-item container -->
+                    </div>
+                    <!-- end nav-item container -->
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <!-- end navigation div -->
+
+            
+            <!-- responsive navigation div -->
+            <div id="nav-container" class="fixed-top d-block d-xl-none d-xxl-none">
+                <!-- navigation -->
+                <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+                    <!-- nav-item container -->
+                    <div class="container-fluid h-auto">
+                        <!-- nav icon -->
+                        <a class="navbar-brand ms-2 responsive-homeicon" href="../index.html">
+                            <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-25" />
+                        </a>
+                        <!-- end nav icon -->
+                        <!-- toggler button for responsive -->
+                        <input type="checkbox" id="active-nav-effect" class="d-none">
+                        <label for="active-nav-effect" class="responsivenav-menubtn d-block d-xl-none d-xxl-none rounded-circle">
+                            <span></span>
+                        </label>
+                         <label for="active-nav-effect" class="close"></label>
+                        <!-- end toggler button for responsive -->
+                        
+                        <!-- navbar-item container -->
+                        <div class="responsive-nav wrapper" id="navContent">
+                            <!-- nav icon -->
+                            <a class="navbar-brand ms-lg-2 m-0" href="../index.html">
+                                <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-50 w-lg-auto w-xl-auto w-xxl-auto pt-5" />
+                            </a>
+                            <!-- end nav icon -->
+                            <ul class="mx-auto my-lg-0 responsive-ul">
+                                    
+                                <li class="nav-item mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="blog-collection.html#blog">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown mx-auto my-4 w-auto">
+                                    <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-tests.html#test" title="Get to know your current mental health condition">Tests</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-relax.html">Relax for two minutes</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="service-daily-affirmation.html">Daily affirmation</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-6" href="chat.html" title="Open up everything freely">Chat</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item  mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="about.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-auto my-4 w-auto">
+                                    <a class="nav-link" href="../index.html#contact-section">
+                                        Contact us
+                                    </a>
+                                </li>
+                                <!-- signin/up div -->
+                                <div class="signinup-div w-100 h-auto d-flex">
+                                    <!-- signin-btn -->
+                                    <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                        <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                                    </a>
+                                    <!-- end signin-btn -->
+                                    <!-- signup-btn -->
+                                    <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                        <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                                    </a>
+                                    <!-- end signup-btn -->
+                                </div>
+                                <!-- end signin/up div -->
+                            </ul>
+                        </div>
+                        <!-- end navbar-item container -->
+                    </div>
+                    <!-- end nav-item container -->
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <!-- end responsive navigation div -->
+            <!-- header-bg div -->
+            <!-- <video autoplay muted loop id="headerVideo" class="d-block h-100 w-100">
+                <source src="../media/h-bgvd.mp4" type="video/mp4">
+            </video> -->
+        </div>
+        <!-- quote div -->
+        <!-- <div class="py-5 col-12 header-quote-div">
+            <h1 class="text-center header-quote py-4">"It's OK to not be OK."</h1>
+        </div> -->
+        <!-- end quote div -->
+        <!-- end header-bg div -->
+        <!-- happiness header -->
+		<div class="px-auto bigdiv_happiness bigdiv_blogheader">
+            <div class="bigtext_happy bigtext_blogtext text-center text-white col-11 mx-auto"  onmouseenter="waveHover()" onmouseleave="waveHoverout()">
+                <span>I</span><span>f</span><span>,</span>
+                <span> </span>
+                <span>y</span><span>o</span><span>u</span>
+                <span> </span>
+                <span>w</span><span>a</span><span>n</span><span>t</span>
+                <span> </span>
+                <span>t</span><span>o</span>
+                <span> </span>
+                <span>f</span><span>i</span><span>n</span><span>d</span>
+                <span> </span>
+                <span>h</span><span>a</span><span>p</span><span>p</span><span>i</span><span>n</span><span>e</span><span>s</span><span>s</span><span>,</span>
+                <span> </span>
+                <div>
+                    <span>f</span><span>i</span><span>n</span><span>d</span>
+                    <span></span>
+                    <span>g</span><span>r</span><span>a</span><span>t</span><span>i</span><span>t</span><span>u</span><span>d</span><span>e</span><span>.</span>
+                
+                </div>
+            </div>
+        </div>
+        <!-- end happiness header -->
+  
+    </header>
+    <!-- end header -->
+
+	<section id="find-happy" class="py-5 col-11 px-auto mx-auto bg-light">
+
+   		<!-- find happiness blogs -->
+	    <div class="happiness-blog container col-10 col-lg-12 col-xl-12 col-xxl-12">
+	    	<!-- Tips to help finding happpiness -->
+			<div class="mt-3">
+				<h3 class="ms-5">Finding your happiness</h3>
+				
+
+				<br/> <p>
+					“Happiness is the consequence of personal effort. You fight for it, strive for it, insist upon it, and sometimes even travel around the world looking for it. You have to participate relentlessly in the manifestations of your own blessings. And once you have achieved a state of happiness, you must never become lax about maintaining it. You must make a mighty effort to keep swimming upward into that happiness forever, to stay afloat on top of it.”</b><p class="text-end">
+				By Elizabeth Gilbert, Eat, Pray, Love</p>
+				</p>
+				<ul>
+					<li>Happiness means being willing to evolve.</li>
+					
+					<li>True happiness is what you feel when you plant a tree or see the perfect sunrise (it doesn't matter where you see it from).</li>
+				</ul>
+				
+			</div>
+
+			<hr/>
+			<!-- Start tips div -->
+			<div class="happiness-tip col-12 mx-auto mt-5">
+				<div class="happiness-intro d-block d-lg-flex d-xl-flex d-xxl-flex">
+					<!-- tips with text -->
+					<div class="col-10 col-xl-5 col-xxl-5 mx-auto">
+						<h2 class="text-center">These tips will help to find happiness</h2>
+
+						<p>					
+							<br/>• Practice Daily Gratitude.
+							<br/>• Let go for the heaviness.
+
+							<br/>• Surround Yourself with Positive People.
+							<br/>• Do Regular Acts of Kindness.
+
+							<br/>• Whatever make your soul happy, do it.
+							<br/>• Be forgiving
+
+							<br/>• Let go of the past
+							<br/>• True happiness is when we are happy with ourselves.
+
+							<br/>• More time to exercise
+							<br/>• Learn to meditate
+						
+						</p>	
+					</div>
+					<!-- end tips with text -->
+                    <div class="col-6">
+						<img src="../img/be-happy.png " class="w-100" alt="image for the tips to find happiness">
+					</div>
+				</div>
+				<!-- end tips div -->
+			</div>
+			<!-- end tips -->
+			<!-- quotes -->
+			<div class="happiness_quote shadow-lg p-5 mb-5 bg-body rounded-3 w-75 h-25 mx-auto text-center mt-5" id="">
+                “To be happy, you must be your own shunshine”
+        	</div>
+        	<!-- end quotes -->
+
+			<!-- first section -->
+			<div class="container-fluid first-blog mx-auto mt-5">
+				<div class="d-block d-xl-flex d-xxl-flex my-5 mx-auto">
+
+					<div class="col-12 col-xl-5 col-xxl-5 card mx-auto my-5">
+						<img src="../img2/gratitude.jpg" alt="gratitude image">
+						<div class="card-body">
+							<h5>Practice Daily Gratitude</h5>
+							<p class="card-text">A possible theory is that gratitude moves people to experience more positive emotions, to thoroughly enjoy the good experiences, better their health, face adversity, and develop and maintain relationships of strength, which in turn makes you happier. 
+							<br/>Three common ways people can express their gratitude are: 
+
+							<br/>• By being gracious of their past (i.e., think of positive childhood memories) 
+
+							<br/>• By being gracious for the present (i.e., taking time to be present and enjoy) 
+
+							<br/>• By being grateful for what’s to come (i.e., hopeful and optimistic of the future) (Giving thanks makes you happier). 
+							</p>
+						</div>
+					</div>
+
+					<div class="col-12 col-xl-5 col-xxl-5 card mx-auto my-5">
+						<img src="../img2/happiness.jpeg" alt="happiness">
+						<div class="card-body">
+							<h5>Let go for the heaviness</h5>
+							<p class="card-text">If You Want to Feel Light, You Have to Let Go.
+								<br/> 
+								We each carry our own heavy things like worry, fear, pain, and bad habits, but we all share the burden. It’s not just you who suffers from the weight you carry through the world. It impacts your work, relationships, health and everyone around you.<br/>The heaviness can look like exhaustion, frustration, sadness, anxiousness and illness and when you keep holding onto everything, it’s hard to figure out what’s weighing you down.
+
+							<br/>• When you let go of anger or resentment from the past, your heart feels light.
+							<br/>• When you let go of fear of the future, your soul feels light.
+
+							<br/>• When you let go of perfection, everything feels light.
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--end first section -->
+
+			<!-- second section -->
+			<div class="container-fluid first-blog mx-auto mt-5">
+				<div class="d-block d-xl-flex d-xxl-flex my-5 mx-auto">
+
+					<div class="col-12 col-xl-5 col-xxl-5 card mx-auto my-5">
+						<img src="../img2/friendship.jpg" alt="friendship">
+						<div class="card-body">
+							<h5>Surround yourself with positive people</h5>
+							<p class="card-text">Surrounding yourself with positive people can help mitigate the effects of stress, alleviate anxiety, and help you cope with depression.
+								<br/>There are many benefits of having positive people around us. They bring positive vibes, which if inherited will make you see the advantages easily. They inspire themselves and others. They encourage teamwork and better relationship with each other, and that increases productivity.
+								<br/>Once you’re surrounded by people with positive energy, you’ll see a change in yourself too. You’ll be more energized, motivated, and you will be less likely to be stressed. </p>
+						</div>
+					</div>
+
+					<div class="col-12 col-xl-5 col-xxl-5 card mx-auto my-5">
+						<img src="../img2/kind.jpg" alt="kind">
+						<div class="card-body">
+							<h5>Do Regular Acts of Kindness.</h5>
+							<p class="card-text">Acts of kindness can make the world a happier place for everyone. 
+							<br/> • sending notes of gratitude – hand-write a thank you note to someone you admire or who has helped you out
+							<br/> • post a sticky note – stick post-it notes with nice  messages written on them around your house or somewhere in public
+							<br/> • volunteering – being a volunteer helps others and is good for you too
+							<br/> • donating to a charity store – help people out by giving away what you no longer want or need
+							<br/> • smiling at strangers – smiling is contagious and it makes you feel good if people smile back
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--end second section -->
+
+			<!-- third section -->
+			<div class="container-fluid first-blog mx-auto mt-5">
+				<div class="d-block d-xl-flex d-xxl-flex my-5">
+
+					<div class="col-12 col-xl-5 col-xxl-5 card mx-auto my-5">
+						<img src="../img2/do-it.jpg" alt="do it">
+						<div class="card-body">
+							<h5>Whatever make your soul happy, do it!</h5>
+							<p class="card-text">Happiness is not about having a lot of money, owning lands, cars and businesses. No, it actually about the person you become. <br/>Start writing down anything that makes you happy. Write down things that put a burning passion in your heart, anything that lights a fire in your soul.<br/> If you are a happy person, it doesn’t matter how big your money or how small your circle is. You will always be happy. Because happiness is acquired by the person you become not the things you attract into your life.   </p>
+						</div>
+					</div>
+
+					<div class="col-12 col-xl-5 col-xxl-5 card mx-auto my-5">
+						<img src="../img2/forgive.jpg" alt="forgive">
+						<div class="card-body">
+							<h5>Be forgiving</h5>
+							<p class="card-text">Forgiveness is often the ingredient we need, to let go of what is weighing us down.
+								<br>
+							It can be forgiveness of ourselves or others. Whoever it’s for, forgiveness benefits the one that chooses it. It leaves us feeling lighter and more at peace. It doesn’t mean that we condone what happened. It means that we love ourselves enough to not want to keep ingesting poison created by negative thoughts and emotions. Notice today if there is something that you aren’t letting go of and think about how it is affecting you.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--end third section -->
+
+			<!-- fourth section -->
+			<div class="container-fluid first-blog mx-auto mt-5">
+				<div class="d-block d-xl-flex d-xxl-flex my-5">
+
+					<div class="col-12 col-xl-5 col-xxl-5 card mx-auto my-5">
+						<img src="../img2/let-past.jpg" alt="go to past">
+						<div class="card-body">
+							<h5>Let go of the past</h5>
+							<p class="card-text">Letting go of the past, including people who hurt you, so suffering from that, brings relief, ease, joy and love. When you release the past you can start accepting the present. 
+							<br/> • Create a positive mantra to counter the painful thoughts.
+							<br/> • Prioritizing yourself may help
+							<br/> • Practice mindfulness
+							<br/> •  Engage in self-care
+							<br/> • Do not allow fear to hold you down
+							 <br/> • Give yourself permission to forgive
+							</p>
+						</div>
+					</div>
+
+					<div class="col-12 col-xl-5 col-xxl-5 card mx-auto my-5">
+						<img src="../img2/relax.jpg" alt="relax">
+						<div class="card-body">
+							<h5>True happiness is when we are happy with ourselves.</h5>
+							<p class="card-text">True happiness is happiness inside you. True happiness is enjoying your own company and living in peace and harmony with your body, mind and soul. True happiness is state of mind constantly being in love with yourself. 
+								<br/> • First and the most important is to be a great lover for yourself, treat yourself as a prince or princess
+							<br/> •Stay away from people that are source of negativity
+							<br/> • Stay away from negative feelings of envy, jealousy, fear, anger
+
+							<br/> •  Nurture your body and soul. Have nutritious meals and start meditation
+							
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--end fourth section -->
+
+			<!-- exercise section -->			
+
+			<div class=" mx-auto mt-5 d-block d-xl-flex d-xxl-flex container-fluid">
+				
+				<img src="../img2/exercise.jpg" class="col-12 col-xl-6 col-xxl-6 mx-auto" alt="Image of meditation">
+				<div class="exercise-text ms-4 col-12 col-xl-6 col-xxl-6 mx-auto">
+					<h5 class="text-center my-1">More time to exercise </h5>
+						<p class="mt-4">Exercise is one of the most effective natural strategies to uplift your mood and mental health. <br/>Physical activity stimulates various brain chemicals that may leave you feeling happier, more relaxed and less anxious.<br/>You may also feel better about your appearance and yourself when you exercise regularly, which can boost your confidence and improve your self-esteem.<br/>
+							<br/> • Movement helps you bond with others.
+							<br/> • Exercise helps reduce anxiety and depression .
+							<br/> • Exercise can help boost your confidence .
+
+							<br/> •  Exercising outdoors has a effect on your brain similar to meditation.
+						</p>
+				</div>
+			</div>
+			<!-- end exercise section -->
+
+			<!-- meditation section -->			
+
+			<div class=" mx-auto mt-5  d-block d-xl-flex d-xxl-flex container-fluid">
+				
+				<div class="meditate-text col-12 col-xl-6 col-xxl-6 mx-auto">
+					<h5 class="text-center my-1">Learn to meditate</h5>
+						<p class="mt-4">People who meditate generally lead happier lives than those who don’t. Meditation is known to enhance the flow of constructive thoughts and positive emotions. Even a few minutes spent meditating regularly can make a big difference. It can lowers stress, reduces anxiety, enhances mental health, improve self-awareness and training the mind to remain calm, even in stressful situations.<br/><br/>
+							<samp>Step:1</samp> Sit upright comfortably
+							<br/>
+							<samp>Step:2</samp> Gently close your eyes<br/>
+							<samp>Step:3</samp> Breathe deeply<br/> 
+							<samp>Step:4</samp> Slowly scan your body, and notice any sensations<br/>
+							<samp>Step:5</samp> Be aware of any thoughts you are having<br/>
+							<samp>Step:6</samp> When your mind wanders, focus on your breath
+							<br/><samp>Step:7</samp> Gently open your eyes when you are ready<br/>
+						</p>
+				</div>
+
+				<img src="../img2/meditate.jpg" class="col-12 col-xl-6 col-xxl-6 mx-auto ms-3" alt="Image of meditation">
+			</div>
+			<!-- end meditation section -->			
+			
+			<!--end last section -->
+	    </div>	
+    <!-- end find happiness blogs -->    
+	</section>
+	
+    <!-- footer -->
+    <footer id="footer" class="pt-1">
+        <!-- first footer part -->
+        <div class="col-11 mx-auto my-1 d-lg-flex  d-xl-flex d-xxl-flex d-block py-4">
+            <!-- features div -->
+            <div class="col-lg-2 col-xl-2 col-xxl-3 col-11 mx-auto ms-lg-5 ms-xl-5 ms-xxl-5">
+                <!-- heading -->
+                <div class="d-flex border-bottom border-dark pb-3 mt-2 h feature-heading">
+                    <h4 class="mt-2 text-center text-xxl-start text-xl-start">Features</h4>
+                    <div class="feature-icon ms-2 pt-2">
+                        <svg version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" class="svg-feature">
+                            <g>
+                                <path d="m930 552.86h-660c-6.9297 0-13.191-4.168-15.836-10.582-2.6602-6.4102-1.1875-13.777 3.7148-18.684l289.72-289.7c4.1367-4.1367 10.078-5.875 15.836-4.6211 5.707 1.2734 10.379 5.375 12.387 10.883 3.7031 10.164 13.43 16.996 24.176 16.996s20.473-6.832 24.191-17.008c2.0078-5.5078 6.6797-9.5938 12.406-10.863 5.6602-1.2539 11.668 0.48437 15.82 4.6211l289.7 289.7c4.9062 4.9062 6.3789 12.27 3.7148 18.684-2.6445 6.4062-8.9062 10.574-15.836 10.574zm-618.62-34.285h577.23l-245.5-245.51c-11.102 11.469-26.586 18.367-43.109 18.367-16.539 0-32.008-6.8984-43.109-18.348z"></path>
+                                <path d="m986.48 1028.6h-772.97c-23.203 0-42.086-18.883-42.086-42.086v-425.82c0-23.203 18.883-42.09 42.086-42.09h772.97c23.203 0 42.086 18.887 42.086 42.09v425.82c0 23.203-18.883 42.086-42.086 42.086zm-772.97-475.71c-4.3008 0-7.8008 3.5-7.8008 7.8047v425.82c0 4.3008 3.5 7.8008 7.8008 7.8008h772.97c4.3008 0 7.8008-3.5 7.8008-7.8008v-425.82c0-4.3047-3.5-7.8047-7.8008-7.8047z"></path>
+                                <path d="m599.92 935.74c-89.332 0-162-72.758-162-162.17 0-89.414 72.672-162.17 162-162.17 89.414 0 162.17 72.758 162.17 162.17-0.003906 89.414-72.758 162.17-162.17 162.17zm0-290.05c-70.43 0-127.72 57.371-127.72 127.89 0 70.512 57.289 127.89 127.72 127.89 70.512 0 127.89-57.371 127.89-127.89-0.003907-70.516-57.375-127.89-127.89-127.89z"></path>
+                                <path d="m576.71 838.07c-4.5547 0-8.9062-1.8086-12.121-5.0234l-48.113-48.129c-6.6953-6.6953-6.6953-17.543 0-24.242 6.6953-6.6953 17.543-6.6953 24.242 0l35.992 36.012 82.582-82.582c6.6953-6.6953 17.543-6.6953 24.242 0 6.6953 6.6953 6.6953 17.543 0 24.242l-94.703 94.703c-3.2148 3.2109-7.5703 5.0195-12.121 5.0195z"></path>
+                                <path d="m600 291.43c-25.113 0-47.777-15.887-56.383-39.559-2.3633-6.1445-3.6172-13.125-3.6172-20.441 0-33.082 26.918-60 60-60s60 26.918 60 60c0 7.3477-1.2383 14.312-3.6992 20.727-8.5391 23.387-31.207 39.273-56.301 39.273zm0-85.715c-14.18 0-25.715 11.535-25.715 25.715 0 3.0625 0.50391 5.9766 1.4414 8.4375 3.8008 10.445 13.527 17.277 24.273 17.277s20.473-6.832 24.191-17.008c1.0391-2.6992 1.5234-5.6094 1.5234-8.707 0-14.18-11.535-25.715-25.715-25.715z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <!-- links list ul -->
+                <ul class="mt-4">
+                    <li class="footer-feature-li my-2 mx-auto">
+                        <a href="blog-collection.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2 mx-auto">
+                        <a href="../index.html#service">
+                            Service
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2 mx-auto">
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../media/terms_condition_data.docx">
+                            Terms and condition
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2">
+                        <a href="../media/citation.docx">
+                            Citation
+                        </a>
+                    </li>
+                </ul>
+                <!-- end links list ul -->
+            </div>
+            <!-- end features div -->
+            <!-- icon div -->
+            <!-- <div class="col-lg-4 col-xl-4 col-xxl-4 mx-auto ps-1">
+                <a href="../index.html">
+                    <img src="img/icon.png" alt="HOME icon" class="p-5" />
+                </a>
+            </div> -->
+            <!-- icon div -->
+            <!-- contact us div -->
+            <div id="contact-section" class="col-lg-6 col-xl-6 col-xxl-6 col-11 mx-auto my-1">
+                <!-- heading contact us -->
+                <h4 class="border-bottom border-dark pb-3 mb-4">Contact us</h4>
+                <!-- end heading contact us -->
+                <!-- contact us form -->
+                <form action="" method="post " class="mt-2">
+                    <!-- name -->
+                    <div class="mb-3 d-xl-flex">
+                        <input type="text" class="form-control" id="contactInputName" placeholder="Name">
+                    </div>
+                    <!-- end name -->
+                    <!-- email -->
+                    <div class="mb-3 d-lg-flex d-xl-flex d-xxl-flex">
+                        <input type="email" class="form-control" id="contactInputEmail" aria-describedby="emailHelp" placeholder="Email address">
+                    </div>
+                    <!-- end email -->
+                    <!-- PhoneNumber -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="contactInputPhoneNumber" placeholder="Phone number">
+                    </div>
+                    <!-- end PhoneNumber -->
+                    <!-- message -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control py-4" id="contactInputmessage" placeholder="Message">
+                    </div>
+                    <!-- end message -->
+                    <!-- send btn -->
+                    <button type="submit" class="btn btn-primary d-flex sendmsg-div sendbtn-footer px-3 py-2">
+                        <div class="send-svg-div">
+                            <div class="ssend-svg-div">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="send-span">
+                            Send
+                        </span>
+                    </button>
+                    <!-- end send btn -->
+                <!-- end contact us form -->
+            </div>
+            <!-- end contact us div -->
+        </div>
+        <!-- end first footer part -->
+
+        <!-- second footer part-->
+        <div class="d-flex s-footer pb-1">
+            <!-- copy right -->
+            <span class="fst-italic ms-4 mt-3 col-7">
+                @2023 HOME
+            </span>
+            <!-- end copy right -->
+            <!-- social media ul -->
+            <ul class="d-flex mx-auto icon-ul-footer">
+                <!-- facebook -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end facebook -->
+                <!-- instagram -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end instagram -->
+                <!-- twitter -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end twitter -->
+                <!-- youtube -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-youtube fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end youtube -->
+            </ul>
+            <!-- end social media ul -->
+        </div> 
+        <!-- end second footer part-->  
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- link with javascript -->
+    <script src="../javascript/js.js"></script>
+    <!-- end link with javascript -->
+
+</body>
+</html>

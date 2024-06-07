@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en" class="relax-html">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relax</title>
+	<link rel="icon" type="icon/image" href="../img/icon.png">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body id="service-body" class="relax-body">
+    <!-- music -->
+    <div class="musicIcon-relax rounded-circle">
+        <i class="fa-solid fa-music musicIcon fs-5 p-3" onclick="expandMusic()"></i>
+        <i class="fa-solid fa-close musicIcon fs-5 p-3 d-none" onclick="closeMusic()"></i>
+    </div>
+    <div class="musicWrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons play">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class= "list material-icons">queue_music</i>
+                    <span>Music list</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+                <!-- here li list are coming from js -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- back to home a -->
+    <a href="../index.html" class="text-black backtoHome navbar-brand ms-2 col-lg-1 col-xl-1 col-xxl-1 col-md-1 col-2 fixed-top">
+        <img src="../img/icon-nav.png" alt="HOME icon" class="nav-icon w-100 w-lg-75 w-xl-75 w-xxl-50" />
+    </a>
+    <!-- end back to home a -->
+    <!-- responsive navigation div -->
+    <div id="nav-container" class="fixed-top d-block">
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-xl h-auto" id="navigation">
+            <!-- nav-item container -->
+            <div class="container-fluid h-auto">
+                <!-- toggler button for responsive -->
+                <input type="checkbox" id="active-nav-effect" class="d-none">
+                <label for="active-nav-effect" class="responsivenav-menubtn d-block rounded-circle">
+                    <span></span>
+                </label>
+                 <label for="active-nav-effect" class="close"></label>
+                <!-- end toggler button for responsive -->
+                
+                <!-- navbar-item container -->
+                <div class="Sresponsive-nav wrapper" id="navContent">
+                    <!-- nav icon -->
+                    <a class="navbar-brand ms-lg-2 m-0" href="../index.html">
+                        <img src="../img/icon.png" alt="HOME icon" class="nav-icon w-50 w-lg-auto w-xl-auto w-xxl-auto pt-5" />
+                    </a>
+                    <!-- end nav icon -->
+                    <ul class="mx-auto my-lg-0 Sresponsive-ul">
+                            
+                        <li class="nav-item mx-auto my-4 w-auto">
+                            <a class="nav-link" href="blog-collection.html#blog">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown mx-auto my-4 w-auto">
+                            <a class="nav-link dropdown-toggle" href="../index.html#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item fs-6" href="service-tests.html#test" title="getting to know your current mental health condition">Tests</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-6" href="https://youtube.com/playlist?list=PLQiGxGHwiuD1kdxsWKFuhE0rITIXe-7yC">Meditation programs </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-6" href="service-relax.html">Relax for two minutes</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-6" href="service-music.html">Enjoy your music</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-6" href="service-daily-affirmation.html">Daily affirmation</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-6" href="chat.html" title="Open up everything freely">Chat</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  mx-auto my-4 w-auto">
+                            <a class="nav-link" href="about.html#about">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item mx-auto my-4 w-auto">
+                            <a class="nav-link" href="../index.html#contact-section">
+                                Contact us
+                            </a>
+                        </li>
+                        <!-- signin/up div -->
+                        <div class="signinup-div w-100 h-auto d-flex">
+                            <!-- signin-btn -->
+                            <a href="signin.html" class="w-50 text-decoration-none h-auto border-end border-secondary border-1">
+                                <button type="button"class="sign-btn w-100 h-auto py-2">Sign in</button>
+                            </a>
+                            <!-- end signin-btn -->
+                            <!-- signup-btn -->
+                            <a href="signup.html" class="w-50 text-decoration-none h-auto">
+                                <button type="button" class="sign-btn w-100 h-auto py-2">Sign up</button>
+                            </a>
+                            <!-- end signup-btn -->
+                        </div>
+                        <!-- end signin/up div -->
+                    </ul>
+                </div>
+                <!-- end navbar-item container -->
+            </div>
+            <!-- end nav-item container -->
+        </nav>
+        <!-- end navigation -->
+    </div>
+    <!-- end responsive navigation div -->
+
+    <!-- timer div -->
+    <div class="relax-Countdown-div bg-white border-1 border-white border p-3 mx-auto px-auto d-block">
+        <div class="relaxTimer">
+            <span class="minute">02</span>:<span class="second">00</span>
+        </div>
+        <div class="control mx-auto p-auto text-center">
+            <!-- start btn  -->
+            <button class="col-3 p-1 px-auto  mx-auto bg-transparent border-1" onClick="relaxTimer.start(1000)">
+                <i class="fa-solid fa-play startI"></i>
+            </button> 
+            <!-- end start btn  -->
+            <!-- stop btn -->
+            <button class="col-3 p-1 px-auto  mx-auto bg-transparent border-1" onClick="relaxTimer.stop()">
+                <i class="fa-solid fa-stop"></i>
+            </button> 
+            <!-- end stop btn -->
+            <!-- reset btn -->
+            <button class="col-3 p-1 px-auto mx-auto bg-transparent border-1" onClick="relaxTimer.reset(120)">
+                <i class="fa-solid fa-sync fa-spin"></i>
+            </button> 
+            <!-- end reset btn -->
+        </div>
+    </div>
+    <!-- end timer div -->
+    
+    <!-- images container -->
+    <section class="relax-section">
+        <!-- parallax image 1 -->
+        <div class="parallax-relax parallax-relax1"></div>
+        <!-- end parallax image 1 -->  
+        <!-- parallax div 1 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv1 p-5">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-ocean">Ocean mood</h1>
+        </div>
+        <!-- end parallax div 1 -->
+        
+        <!-- parallax image 2 -->
+        <div class="parallax-relax parallax-relax2"></div>
+        <!-- parallax image 2 -->
+        <!-- parallax div 2 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv2">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-waterfall">Waterfall mood</h1>
+        </div>
+        <!-- end parallax div 2 -->
+
+        <!-- parallax image 3 -->
+        <div class="parallax-relax parallax-relax3"></div>
+        <!-- end parallax image 3 -->  
+        <!-- parallax div 3 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv3">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Cascade">Cascade mood</h1>
+        </div>
+        <!-- end parallax div 3 -->
+
+        <!-- parallax image 4 -->
+        <div class="parallax-relax parallax-relax4"></div>
+        <!-- end parallax image 4 -->  
+        <!-- parallax div 4 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv1">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Lake">Lake mood</h1>
+        </div>
+        <!-- end parallax div 1 -->
+
+        <!-- parallax image 5 -->
+        <div class="parallax-relax parallax-relax5"></div>
+        <!-- end parallax image 5 -->  
+        <!-- parallax div 5 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv5">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Woodland">Woodland mood</h1>
+        </div>
+        <!-- end parallax div 5 -->
+
+        <!-- parallax image 6 -->
+        <div class="parallax-relax parallax-relax6"></div>
+        <!-- end parallax image 6 -->  
+        <!-- parallax div 6 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv6">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Forest">Forest mood</h1>
+        </div>
+        <!-- end parallax div 6 -->
+
+
+        <!-- parallax image 7 -->
+        <div class="parallax-relax parallax-relax7"></div>
+        <!-- end parallax image 7 -->  
+        <!-- parallax div 7 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv7">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Mountains">Mountains mood</h1>
+        </div>
+        <!-- end parallax div 7 -->
+
+
+        <!-- parallax image 8 -->
+        <div class="parallax-relax parallax-relax8"></div>
+        <!-- end parallax image 8 -->  
+        <!-- parallax div 8 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv8">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-SMountains text-white">Mountains mood</h1>
+        </div>
+        <!-- end parallax div 8 -->
+
+
+        <!-- parallax image 9 -->
+        <div class="parallax-relax parallax-relax9"></div>
+        <!-- end parallax image 9 -->  
+        <!-- parallax div 9 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv9">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood  relax-mood-mountains">Mountains mood</h1>
+        </div>
+        <!-- end parallax div 9 -->
+
+
+        <!-- parallax image 10 -->
+        <div class="parallax-relax parallax-relax10"></div>
+        <!-- end parallax image 10 -->  
+        <!-- parallax div 10 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv10">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Flowers text-white">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 10 -->
+
+
+        <!-- parallax image 11 -->
+        <div class="parallax-relax parallax-relax11"></div>
+        <!-- end parallax image 11 -->  
+        <!-- parallax div 11 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv11">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Flowers text-white">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 11 -->
+
+
+        <!-- parallax image 12 -->
+        <div class="parallax-relax parallax-relax12"></div>
+        <!-- end parallax image 12 -->  
+        <!-- parallax div 12 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv12">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-pFlowers">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 12 -->
+
+
+        <!-- parallax image 13 -->
+        <div class="parallax-relax parallax-relax13"></div>
+        <!-- end parallax image 13 -->  
+        <!-- parallax div 13 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv13">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-pFlowers">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 13 -->
+
+
+
+        <!-- parallax image 14 -->
+        <div class="parallax-relax parallax-relax14"></div>
+        <!-- end parallax image 14 -->  
+        <!-- parallax div 14 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv14">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Flowers text-danger">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 14 -->
+
+
+
+        <!-- parallax image 15 -->
+        <div class="parallax-relax parallax-relax15"></div>
+        <!-- end parallax image 15 -->  
+        <!-- parallax div 15 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv15">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-PFlowers">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 15 -->
+
+
+
+        <!-- parallax image 16 -->
+        <div class="parallax-relax parallax-relax16"></div>
+        <!-- end parallax image 16 -->  
+        <!-- parallax div 16 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv16">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-PFlowers">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 16 -->
+
+
+
+        <!-- parallax image 17 -->
+        <div class="parallax-relax parallax-relax17"></div>
+        <!-- end parallax image 17 -->  
+        <!-- parallax div 17 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv17">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-bFlowers text-primary">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 17 -->
+
+
+
+        <!-- parallax image 18 -->
+        <div class="parallax-relax parallax-relax18"></div>
+        <!-- end parallax image 18 -->  
+        <!-- parallax div 18 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv18">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-yFlowers text-warning">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 18 -->
+
+
+
+        <!-- parallax image 19 -->
+        <div class="parallax-relax parallax-relax19"></div>
+        <!-- end parallax image 19 -->  
+        <!-- parallax div 19 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv19">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-yFlowers text-warning">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 19 -->
+
+
+
+        <!-- parallax image 20 -->
+        <div class="parallax-relax parallax-relax20"></div>
+        <!-- end parallax image 20 -->  
+        <!-- parallax div 20 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv20">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-oFlowers">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 20 -->
+
+        <!-- parallax image 21 -->
+        <div class="parallax-relax parallax-relax21"></div>
+        <!-- end parallax image 21 -->  
+        <!-- parallax div 21 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv21">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Flowers text-white">Flowers mood</h1>
+        </div>
+        <!-- end parallax div 21 -->
+
+
+        
+        <!-- parallax image 30 -->
+        <div class="parallax-relax parallax-relax30"></div>
+        <!-- end parallax image 30 -->  
+        <!-- parallax div 30 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv30">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Spring">Spring mood</h1>
+        </div>
+        <!-- end parallax div 30 -->
+
+
+        <!-- parallax image 22 -->
+        <div class="parallax-relax parallax-relax22"></div>
+        <!-- end parallax image 22 -->  
+        <!-- parallax div 22 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv22">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Spring">Spring mood</h1>
+        </div>
+        <!-- end parallax div 22 -->
+
+
+
+        <!-- parallax image 23 -->
+        <div class="parallax-relax parallax-relax23"></div>
+        <!-- end parallax image 23 -->  
+        <!-- parallax div 23 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv23">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Winter text-white">Winter mood</h1>
+        </div>
+        <!-- end parallax div 23 -->
+
+        
+
+        <!-- parallax image 24 -->
+        <div class="parallax-relax parallax-relax24"></div>
+        <!-- end parallax image 24 -->  
+        <!-- parallax div 24 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv24">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Winter text-white">Winter mood</h1>
+        </div>
+        <!-- end parallax div 24 -->
+
+        <!-- parallax image 25 -->
+        <div class="parallax-relax parallax-relax25"></div>
+        <!-- end parallax image 25 -->  
+        <!-- parallax div 25 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv25">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Rainy text-secondary">Rainy mood</h1>
+        </div>
+        <!-- end parallax div 25 -->
+
+
+
+        <!-- parallax image 26 -->
+        <div class="parallax-relax parallax-relax26"></div>
+        <!-- end parallax image 26 -->  
+        <!-- parallax div 26 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv26">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Rainy text-success">Rainy mood</h1>
+        </div>
+        <!-- end parallax div 26 -->
+
+
+
+        <!-- parallax image 27 -->
+        <div class="parallax-relax parallax-relax27"></div>
+        <!-- end parallax image 27 -->  
+        <!-- parallax div 27 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv27">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Foggy text-white">Foggy mood</h1> 
+        </div>
+        <!-- end parallax div 27 -->
+
+        <!-- parallax image 28 -->
+        <div class="parallax-relax parallax-relax28"></div>
+        <!-- end parallax image 28 -->  
+        <!-- parallax div 28 -->
+        <div class="parallax-relax-dividerDiv parallax-relax-dividerDiv28">
+            <p class="text-white text-center relax-text col-10 mx-auto">Let's give yourself a full rest just for <a href="" class="textcolor-effect-relax text-white">two miutes.</a></p>
+            <h1 class="text-center relax-mood relax-mood-Sunset text-secondary">Sunset mood</h1>
+        </div>
+        <!-- end parallax div 28 -->
+
+        <!-- parallax image 29 -->
+        <div class="parallax-relax parallax-relax29"></div>
+        <!-- end parallax image 29 -->  
+
+    </section>
+    <!-- end images container -->
+
+    
+
+    <!-- footer -->
+    <footer class="pt-1 Sfooter">
+        <!-- first footer part -->
+        <div class="col-11 mx-auto my-1 d-lg-flex d-xl-flex d-xxl-flex d-block py-4 mx-auto">
+            <!-- features div -->
+            <div class="col-lg-8 col-xl-8 col-xxl-10 col-12 mx-auto ms-lg-5 ms-xl-5 ms-xxl-5">
+                <!-- heading -->
+                <div class="d-flex border-bottom border-dark pb-3 mt-2 h feature-heading text-center text-xxl-start text-xl-start justify-content-center justify-content-lg-start justify-content-xl-start justify-content-xxl-start">
+                    <h4 class="mt-2">Features</h4>
+                    <div class="feature-icon ms-2 pt-2">
+                        <svg version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" class="svg-feature">
+                            <g>
+                                <path d="m930 552.86h-660c-6.9297 0-13.191-4.168-15.836-10.582-2.6602-6.4102-1.1875-13.777 3.7148-18.684l289.72-289.7c4.1367-4.1367 10.078-5.875 15.836-4.6211 5.707 1.2734 10.379 5.375 12.387 10.883 3.7031 10.164 13.43 16.996 24.176 16.996s20.473-6.832 24.191-17.008c2.0078-5.5078 6.6797-9.5938 12.406-10.863 5.6602-1.2539 11.668 0.48437 15.82 4.6211l289.7 289.7c4.9062 4.9062 6.3789 12.27 3.7148 18.684-2.6445 6.4062-8.9062 10.574-15.836 10.574zm-618.62-34.285h577.23l-245.5-245.51c-11.102 11.469-26.586 18.367-43.109 18.367-16.539 0-32.008-6.8984-43.109-18.348z"></path>
+                                <path d="m986.48 1028.6h-772.97c-23.203 0-42.086-18.883-42.086-42.086v-425.82c0-23.203 18.883-42.09 42.086-42.09h772.97c23.203 0 42.086 18.887 42.086 42.09v425.82c0 23.203-18.883 42.086-42.086 42.086zm-772.97-475.71c-4.3008 0-7.8008 3.5-7.8008 7.8047v425.82c0 4.3008 3.5 7.8008 7.8008 7.8008h772.97c4.3008 0 7.8008-3.5 7.8008-7.8008v-425.82c0-4.3047-3.5-7.8047-7.8008-7.8047z"></path>
+                                <path d="m599.92 935.74c-89.332 0-162-72.758-162-162.17 0-89.414 72.672-162.17 162-162.17 89.414 0 162.17 72.758 162.17 162.17-0.003906 89.414-72.758 162.17-162.17 162.17zm0-290.05c-70.43 0-127.72 57.371-127.72 127.89 0 70.512 57.289 127.89 127.72 127.89 70.512 0 127.89-57.371 127.89-127.89-0.003907-70.516-57.375-127.89-127.89-127.89z"></path>
+                                <path d="m576.71 838.07c-4.5547 0-8.9062-1.8086-12.121-5.0234l-48.113-48.129c-6.6953-6.6953-6.6953-17.543 0-24.242 6.6953-6.6953 17.543-6.6953 24.242 0l35.992 36.012 82.582-82.582c6.6953-6.6953 17.543-6.6953 24.242 0 6.6953 6.6953 6.6953 17.543 0 24.242l-94.703 94.703c-3.2148 3.2109-7.5703 5.0195-12.121 5.0195z"></path>
+                                <path d="m600 291.43c-25.113 0-47.777-15.887-56.383-39.559-2.3633-6.1445-3.6172-13.125-3.6172-20.441 0-33.082 26.918-60 60-60s60 26.918 60 60c0 7.3477-1.2383 14.312-3.6992 20.727-8.5391 23.387-31.207 39.273-56.301 39.273zm0-85.715c-14.18 0-25.715 11.535-25.715 25.715 0 3.0625 0.50391 5.9766 1.4414 8.4375 3.8008 10.445 13.527 17.277 24.273 17.277s20.473-6.832 24.191-17.008c1.0391-2.6992 1.5234-5.6094 1.5234-8.707 0-14.18-11.535-25.715-25.715-25.715z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <!-- end heading -->
+                
+                <!-- links list ul -->
+                <ul class="mt-4 d-flex mx-auto px-auto">
+                    <li class="footer-feature-li my-2 mx-auto list-unstyled border-end border-1 border-dark pe-2 pe-md-4 pe-lg-5 pe-xl-5 pe-xxl-5">
+                        <a href="blog-collection.html#blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2 mx-auto list-unstyled border-end border-1 border-dark pe-2 pe-md-4 pe-lg-5 pe-xl-5 pe-xxl-5">
+                        <a href="../index.html#service">
+                            Service
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2 mx-auto list-unstyled border-end border-1 border-dark pe-2 pe-md-4 pe-lg-5 pe-xl-5 pe-xxl-5">
+                        <a href="about.html#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2 mx-auto list-unstyled border-end border-1 border-dark pe-2 pe-md-4 pe-lg-5 pe-xl-5 pe-xxl-5">
+                        <a href="../media/terms_condition_data.docx">
+                            Terms and condition
+                        </a>
+                    </li>
+                    <li class="footer-feature-li my-2 mx-auto list-unstyled">
+                        <a href="../media/citation.docx">
+                            Citation
+                        </a>
+                    </li>
+                </ul>
+                <!-- end links list ul -->
+            </div>
+            <!-- end features div -->
+            <!-- icon div -->
+            <!-- <div class="col-lg-4 col-xl-4 col-xxl-4 mx-auto ps-1">
+                <a href="index.html">
+                    <img src="img/icon.png" alt="HOME icon" class="p-5" />
+                </a>
+            </div> -->
+            <!-- icon div -->
+            
+        </div>
+        <!-- end first footer part -->
+
+        <!-- second footer part-->
+        <div class="d-flex s-footer pb-1">
+            <!-- copy right -->
+            <span class="fst-italic ms-4 mt-3 col-7">
+                @2023 HOME
+            </span>
+            <!-- end copy right -->
+            <!-- social media ul -->
+            <ul class="d-flex mx-auto icon-ul-footer">
+                <!-- facebook -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end facebook -->
+                <!-- instagram -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end instagram -->
+                <!-- twitter -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end twitter -->
+                <!-- youtube -->
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="fa-brands fa-youtube fs-6 footer-icon-i"></i>
+                    </a>
+                </li>
+                <!-- end youtube -->
+            </ul>
+            <!-- end social media ul -->
+        </div> 
+        <!-- end second footer part-->  
+    </footer>
+    <!-- end footer -->
+
+
+
+    <!-- <script>
+        // relax time countdown
+        
+        // give value to startMinute
+        const startMinute = 2; 
+        // secondsTime will be the result of multiplicattion and startMinute and 60
+        let secondsTime = startMinute * 60;
+        // get the relaxCountdown-p by its id and declare name countdownElement 
+        const countdownElement = document.getElementById('relaxCountdown-p');
+        document.getElementById('relaxCountdown-p').innerHTML =
+        "02:00";
+        updateCountdown();
+
+        setInterval(updateCountdown, 1000);
+
+        // function to run every secondsTime
+        function updateCountdown() {
+            // minutes will be the rounded result of calculation (the number of second/60) 
+             minutes = Math.floor(secondsTime / 60);
+            // seconds = all the remain numbers after the division 
+            let seconds = time % 60;
+            seconds = seconds < 10 ? '0' + seconds : seconds;   
+            countdownElement.innerHTML = `${minutes}:${seconds}`;         
+            // to decrease the time
+            secondsTime--;
+            
+        }
+    </script>  -->
+    <!-- link with javascript -->
+    <!-- <script src="../javascript/js.js"></scrsssipt> -->
+    <!-- end link with javascript -->
+    <script>
+        function _relaxTimer(callback)
+        {
+            var time = 0;     //  The default time of the timer
+            var mood = 0;    //  for countdown
+            var status = 0;    //    Status: relaxTimer is running or stoped
+            var relaxTimer_id;    //    This is used by setInterval function
+            
+            // this will start the relaxTimer ex. start the relaxTimer with 1 second interval relaxTimer.start(1000) 
+            this.start = function(interval)
+            {
+                interval = (typeof(interval) !== 'undefined') ? interval : 1000;
+        
+                if(status == 0)
+                {
+                    status = 1;
+                    relaxTimer_id = setInterval(function()
+                    {
+                        switch(mood) {
+                            default:
+                            if(time)
+                            {
+                                time--;
+                                generateTime();
+                                if(typeof(callback) === 'function') callback(time);
+                                document.querySelector('.startI').classList.add("fa-pause");
+                                document.querySelector('.startI').classList.remove("fa-play");
+                            }
+                            break;}
+                    }, interval);
+                }
+            }
+            
+            //  this will stop or pause the relaxTimer ex. relaxTimer.stop()
+            this.stop =  function()
+            {
+                if(status == 1)
+                {
+                    status = 0;
+                    clearInterval(relaxTimer_id);
+                    document.querySelector('.startI').classList.remove("fa-pause");
+                    document.querySelector('.startI').classList.add("fa-play");
+                }
+            }
+            
+            // Reset the relaxTimer to zero or reset it to the own custom time ex. reset to zero second relaxTimer.reset(0)
+            this.reset =  function(sec)
+            {
+                sec = (typeof(sec) !== 'undefined') ? sec : 0;
+                time = sec;
+                generateTime(time);
+            }
+            
+            // This methode return the current value of the relaxTimer
+            this.getTime = function()
+            {
+                return time;
+            }
+                        
+            // This methode return the status of the relaxTimer running (1) or stoped (1)
+            this.getStatus
+            {
+                return status;
+            }
+            
+            // This methode will render the time variable to minute:second format
+            function generateTime()
+            {
+                var second = time % 60;
+                var minute = Math.floor(time / 60) % 60;
+                // add 0 to both second and minute 
+                second = (second < 10) ? '0'+second : second;
+                minute = (minute < 10) ? '0'+minute : minute;
+                
+                $('div.relaxTimer span.second').html(second);
+                $('div.relaxTimer span.minute').html(minute);
+            }
+        }
+        
+        // reminder alert 
+        var relaxTimer;
+        
+        $(document).ready(function(e) 
+        {
+            relaxTimer = new _relaxTimer
+            (
+                function(time)
+                {
+                    if(time == 0)
+                    {
+                        relaxTimer.stop();
+                        alert('Congrats! You have taken a rest for two minutes completely.');
+                    }
+                }
+            );
+            
+            relaxTimer.reset(120);
+            relaxTimer.mood(0);
+        });
+
+        const scrollTimer = document.querySelector('.relax-Countdown-div')
+        // when the user scroll down for 100px
+        window.addEventListener('scroll', () => {
+            if (window.scrollY <= 600 ||  window.scrollY > 1700 && window.scrollY < 2800 || window.scrollY > 3700 && window.scrollY < 4700 || window.scrollY > 5500 && window.scrollY < 6600 || window.scrollY > 7500 && window.scrollY < 8500 || window.scrollY > 9200 && window.scrollY < 10200 || window.scrollY > 11000 && window.scrollY < 12000 || window.scrollY > 12800 && window.scrollY < 13900 || window.scrollY > 14800 && window.scrollY < 16000 || window.scrollY > 16700 && window.scrollY < 17800 || window.scrollY > 18500 && window.scrollY < 19600 || window.scrollY > 20500 && window.scrollY < 21600 || window.scrollY > 22300 && window.scrollY < 23300 || window.scrollY > 24200 && window.scrollY < 25400 || window.scrollY > 26000 && window.scrollY < 27100 || window.scrollY > 28000 && window.scrollY < 29050 || window.scrollY > 30100 && window.scrollY < 31200 || window.scrollY > 32000 && window.scrollY < 33100 || window.scrollY > 33800 && window.scrollY < 35000 || window.scrollY > 35800 && window.scrollY < 37000 || window.scrollY > 37700 && window.scrollY < 38800 || window.scrollY > 39600 && window.scrollY < 40600 || window.scrollY > 41400 && window.scrollY < 42300 || window.scrollY > 43300 && window.scrollY < 44440 || window.scrollY > 45400 && window.scrollY < 46500 || window.scrollY > 47000 && window.scrollY < 48000 || window.scrollY > 48800 && window.scrollY < 49900 || window.scrollY > 51100 && window.scrollY < 52100 || window.scrollY > 52850 && window.scrollY < 53700 || window.scrollY > 54800 && window.scrollY < 55900) {
+                scrollTimer.classList.remove('d-none');
+                scrollTimer.classList.add('d-block');
+            } 
+            else if (window.scrollY > 600) {
+                scrollTimer.classList.add('d-none');
+                scrollTimer.classList.remove('d-block');
+            }
+        });
+
+
+        // music 
+        function expandMusic(){
+            document.querySelector('.musicWrapper').style.opacity = '1'            
+            document.querySelector('.fa-music').classList.add('d-none');
+            document.querySelector('.fa-close').classList.add('d-block');
+            document.querySelector('.fa-close').classList.remove('d-none');
+        }
+        function closeMusic(){
+            document.querySelector('.musicWrapper').style.opacity = '0';           
+            document.querySelector('.fa-music').classList.remove('d-none');         
+            document.querySelector('.fa-music').classList.add('d-block');
+            document.querySelector('.fa-close').classList.remove('d-block');
+            document.querySelector('.fa-close').classList.add('d-none');
+        
+        }
+
+
+    </script>
+    
+    <!-- <script src="js/music-list.js"></script> -->
+    <script src="../javascript/music.js"></script>
+
+
+
+    <!-- link with javascript -->
+    <!-- <script src="../javascript/js.js"></script> -->
+    <!-- end link with javascript -->
+</body>
+</html>
